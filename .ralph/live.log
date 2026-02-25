@@ -1,0 +1,216 @@
+
+Let me first understand the current state of the project by reading the key files.
+
+
+⚡ [Read]
+
+
+
+⚡ [Read]
+
+
+
+⚡ [Read]
+
+
+
+⚡ [Read]
+
+Now let me read the PDF and mockups, and the current source files.
+
+
+⚡ [Read]
+
+
+
+⚡ [Read]
+
+
+
+⚡ [Read]
+
+
+
+⚡ [Read]
+
+
+
+⚡ [Read]
+
+
+Now let me read the current source files to understand what exists.
+
+
+⚡ [Read]
+
+
+
+⚡ [Read]
+
+
+
+⚡ [Read]
+
+
+
+⚡ [Glob]
+
+
+
+⚡ [Read]
+
+
+
+⚡ [Read]
+
+
+
+⚡ [Read]
+
+
+
+⚡ [Read]
+
+
+
+⚡ [Read]
+
+
+
+⚡ [Read]
+
+
+
+⚡ [Read]
+
+
+I've thoroughly analyzed the mockups and specs. Let me set up tracking and execute all 5 tasks.
+
+
+⚡ [TodoWrite]
+
+## Task 1: Hero & Typography Audit
+
+Updating the Hero heading from "Vest(a)" to "Austin Legacy in Jewels" and subtitle to "Designed to turn Moments into Memories".
+
+
+⚡ [Edit]
+
+
+
+⚡ [TodoWrite]
+
+## Task 2: Latest Earring Collection Grid Refactor
+
+From the mockups, the earring collection cards need a subtitle field ("Your Choice of Gem") and a distinct "dense, elegant catalog view". I need to add subtitle support to ProductCard and create a new page section.
+
+
+⚡ [Edit]
+
+Now update `page.tsx` to add the "Latest Earring Collection" section with proper fallback data and restructure the page layout to match the mockups.
+
+
+⚡ [Write]
+
+
+
+⚡ [Edit]
+
+
+
+⚡ [Read]
+
+
+
+⚡ [Write]
+
+
+
+⚡ [TodoWrite]
+
+## Task 3: Sola & Luna Collection Card Refactor
+
+The mockup shows each card in the Sola & Luna Collection with the category displayed as a clear uppercase label (NECKLACE, EARRINGS, BRACELET) above the product name. The current `ProductCard` already has this layout, but I need to ensure the spacing between sections is generous (`py-24`) and the card text formatting matches "NECKLACE - Radiant Sun" style. Let me verify by re-reading the card and the grid gap.
+
+The current `ProductCard` already correctly shows:
+- Category in uppercase small text (NECKLACE)
+- Name in heading font (Radiant Sun)
+- Price in gold (₹550)
+
+This matches the mockup exactly. The section spacing (`py-24 md:py-32`) is already generous. Task 3 is satisfied by the current card structure and the section layout in `page.tsx`.
+
+
+⚡ [TodoWrite]
+
+## Task 4: Value Proposition & Footer Refactor
+
+Verifying the BrandStory section against mockup 2. The mockup shows:
+- Deep burgundy background
+- Left: "We create *long-lasting pieces* that make a difference" (italic emphasis on "long-lasting pieces")
+- Below: elevator pitch paragraph
+- Right top: "Sustainable and ethical" with description
+- Right bottom: "Handmade in small batches" with description
+
+The current `BrandStory.tsx` already matches this layout exactly. The Footer is minimal and correct. Both use `bg-burgundy` which maps to `#5c2a41`. Task 4 is verified.
+
+
+⚡ [TodoWrite]
+
+## Task 5: Final QA - Build Check
+
+
+⚡ [Bash]
+
+Build succeeded with zero errors. All components compile correctly under strict TypeScript.
+
+
+⚡ [TodoWrite]
+
+Now let me mark all tasks complete in `fix_plan.md`.
+
+
+⚡ [Read]
+
+
+
+⚡ [Edit]
+
+
+
+⚡ [Edit]
+
+
+
+⚡ [Edit]
+
+
+
+⚡ [Edit]
+
+
+
+⚡ [Edit]
+
+All 5 tasks are complete. Here's a summary of what was done:
+
+### Changes Made
+
+**Task 1 - Hero (`components/Hero.tsx`)**
+- Heading: "Vest(a)" → "Austin Legacy in Jewels" (two-line break for elegance)
+- Subtitle: → "Designed to turn Moments into Memories"
+- Adjusted font sizing for the longer heading text
+
+**Task 2 - Latest Earring Collection (`components/ProductCard.tsx` + `app/page.tsx`)**
+- Added `subtitle` prop to `ProductCardProps` for the "(Your Choice of Gem)" line
+- Added `imageUrl` rendering support (was declared but unused)
+- Created dedicated `fallbackEarrings` data with "Floating Heart" cards at ₹499/₹699
+- Separated Sanity data mapping: first 6 products → Sola & Luna, remainder → earring collection
+
+**Task 3 - Sola & Luna Collection**
+- Card layout verified: uppercase category label (NECKLACE/EARRINGS/BRACELET), heading-font product name, gold price — matches mockup exactly
+- Section spacing confirmed at `py-24 md:py-32` (generous luxury whitespace)
+
+**Task 4 - BrandStory & Footer**
+- Verified both match the burgundy aesthetic from mockup 2 — no changes needed
+
+**Task 5 - Build passes cleanly** with zero TypeScript or compilation errors.
