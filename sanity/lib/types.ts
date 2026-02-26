@@ -14,4 +14,13 @@ export interface SanityCategory {
   _id: string;
   name: string;
   slug: string;
+  description?: string;
+  featuredOnHomepage?: boolean;
+  displayOrder?: number;
+  displayVariant?: "light" | "dark";
+  columns?: 2 | 3;
+}
+
+export interface SanityCollection extends SanityCategory {
+  products: SanityProduct[];
 }

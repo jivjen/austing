@@ -1,5 +1,26 @@
 import { defineQuery } from "next-sanity";
 
+export const HOMEPAGE_COLLECTIONS_QUERY = defineQuery(
+  `*[_type == "category" && featuredOnHomepage == true] | order(displayOrder asc) {
+    _id,
+    name,
+    "slug": slug.current,
+    description,
+    displayVariant,
+    columns,
+    displayOrder,
+    "products": *[_type == "product" && category._ref == ^._id] | order(_createdAt desc) {
+      _id,
+      name,
+      "slug": slug.current,
+      price,
+      image,
+      "category": category->name,
+      description
+    }
+  }`
+);
+
 export const PRODUCTS_QUERY = defineQuery(
   `*[_type == "product"] | order(_createdAt desc) {
     _id,

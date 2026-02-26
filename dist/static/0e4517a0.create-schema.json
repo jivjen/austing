@@ -1,0 +1,200 @@
+[
+  {
+    "fields": [
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "name",
+        "type": "string"
+      },
+      {
+        "options": {
+          "source": "name"
+        },
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "custom"
+              },
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "slug",
+        "type": "slug"
+      },
+      {
+        "name": "description",
+        "type": "text"
+      },
+      {
+        "initialValue": false,
+        "name": "featuredOnHomepage",
+        "type": "boolean",
+        "title": "Featured on Homepage"
+      },
+      {
+        "initialValue": 0,
+        "description": "Lower numbers appear first on the homepage",
+        "name": "displayOrder",
+        "type": "number"
+      },
+      {
+        "options": {
+          "list": [
+            {
+              "title": "Light",
+              "value": "light"
+            },
+            {
+              "title": "Dark",
+              "value": "dark"
+            }
+          ],
+          "layout": "radio"
+        },
+        "initialValue": "light",
+        "name": "displayVariant",
+        "type": "string"
+      },
+      {
+        "options": {
+          "list": [
+            {
+              "title": "2 Columns",
+              "value": 2
+            },
+            {
+              "title": "3 Columns",
+              "value": 3
+            }
+          ],
+          "layout": "radio"
+        },
+        "initialValue": 3,
+        "name": "columns",
+        "type": "number",
+        "title": "Columns on Homepage"
+      }
+    ],
+    "name": "category",
+    "type": "document"
+  },
+  {
+    "fields": [
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "name",
+        "type": "string"
+      },
+      {
+        "options": {
+          "source": "name"
+        },
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "custom"
+              },
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "slug",
+        "type": "slug"
+      },
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              },
+              {
+                "flag": "min",
+                "constraint": 0
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "price",
+        "type": "number"
+      },
+      {
+        "options": {
+          "hotspot": true
+        },
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "name": "image",
+        "type": "image"
+      },
+      {
+        "validation": [
+          {
+            "rules": [
+              {
+                "flag": "presence",
+                "constraint": "required"
+              }
+            ],
+            "level": "error"
+          }
+        ],
+        "to": [
+          {
+            "type": "category"
+          }
+        ],
+        "name": "category",
+        "type": "reference"
+      },
+      {
+        "name": "description",
+        "type": "text"
+      }
+    ],
+    "name": "product",
+    "type": "document"
+  }
+]
