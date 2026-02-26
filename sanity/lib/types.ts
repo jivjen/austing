@@ -21,6 +21,10 @@ export interface SanityCategory {
   columns?: 2 | 3;
 }
 
+export interface SanityCategoryWithCount extends SanityCategory {
+  productCount: number;
+}
+
 export interface SanityCollection extends SanityCategory {
   products: SanityProduct[];
 }
