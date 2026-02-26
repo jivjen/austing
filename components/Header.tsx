@@ -20,15 +20,12 @@ export default function Header({ variant }: HeaderProps) {
 
   return (
     <header
-      className={`${isHome ? "absolute" : "fixed"} top-0 left-0 w-full z-50 px-8 py-6 flex items-center justify-between ${
-        isDark ? "bg-white/90 backdrop-blur-md border-b border-burgundy/10" : ""
-      }`}
+      className={`${isHome ? "absolute" : "fixed"} top-0 left-0 w-full z-50 px-8 py-6 flex items-center justify-between ${isDark ? "bg-white/90 backdrop-blur-md border-b border-burgundy/10" : ""
+        }`}
     >
       <Link
         href="/"
-        className={`font-heading text-sm tracking-[0.3em] uppercase ${
-          isDark ? "text-burgundy" : "text-white"
-        }`}
+        className="font-heading text-2xl md:text-3xl font-normal text-gold"
       >
         AustinG
       </Link>
@@ -39,15 +36,14 @@ export default function Header({ variant }: HeaderProps) {
             <Link
               key={link.label}
               href={link.href}
-              className={`font-body text-xs tracking-[0.15em] uppercase transition-colors duration-300 ${
-                isDark
-                  ? isActive
-                    ? "text-burgundy"
-                    : "text-burgundy/60 hover:text-burgundy"
-                  : isActive
-                    ? "text-white"
-                    : "text-white/80 hover:text-white"
-              }`}
+              className={`font-body text-xs tracking-[0.15em] uppercase transition-colors duration-300 ${isDark
+                ? isActive
+                  ? "text-burgundy"
+                  : "text-burgundy/60 hover:text-burgundy"
+                : isActive
+                  ? "text-white"
+                  : "text-white/80 hover:text-white"
+                }`}
             >
               {link.label}
             </Link>
