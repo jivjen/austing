@@ -7,7 +7,7 @@ import type { SanityCategoryWithCount } from "@/sanity/lib/types";
 import CollectionCard from "@/components/CollectionCard";
 
 export const metadata = {
-  title: "Collections | Austin Jewelry",
+  title: "Collections | AustinG Jewellery",
 };
 
 export default async function CollectionsPage() {

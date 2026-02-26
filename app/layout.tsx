@@ -23,9 +23,9 @@ const greatVibes = Great_Vibes({
 });
 
 export const metadata: Metadata = {
-  title: "Austin Jewelry | Premium Handcrafted Jewelry",
+  title: "AustinG Jewellery | Premium Handcrafted Jewellery",
   description:
-    "Discover premium handcrafted jewelry from Austin Jewelry. Sustainable, ethical, and made in small batches.",
+    "Discover premium handcrafted jewellery from AustinG Jewellery. Sustainable, ethical, and made in small batches.",
 };
 
 export default function RootLayout({

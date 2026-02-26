@@ -8,13 +8,13 @@ import type { ProductCardProps } from "@/components/ProductCard";
 import { urlFor } from "@/sanity/lib/image";
 
 export const metadata = {
-  title: "New Arrivals | Austin Jewelry",
+  title: "New Arrivals | AustinG Jewellery",
 };
 
 function mapProducts(products: SanityProduct[]): ProductCardProps[] {
   return products.map((p) => ({
     name: p.name,
-    category: p.category ?? "Jewelry",
+    category: p.category ?? "Jewellery",
     price: p.price,
     imageUrl: p.image ? urlFor(p.image).width(600).height(600).url() : undefined,
   }));

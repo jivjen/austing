@@ -15,7 +15,7 @@ import Link from "next/link";
 function mapProducts(products: SanityProduct[]): ProductCardProps[] {
   return products.map((p) => ({
     name: p.name,
-    category: p.category ?? "Jewelry",
+    category: p.category ?? "Jewellery",
     price: p.price,
     imageUrl: p.image ? urlFor(p.image).width(600).height(600).url() : undefined,
   }));
@@ -29,7 +29,7 @@ export async function generateMetadata({
   const { slug } = await params;
   const category = await client.fetch<SanityCategory | null>(CATEGORY_BY_SLUG_QUERY, { slug });
   if (!category) return { title: "Collection Not Found" };
-  return { title: `${category.name} | Austin Jewelry` };
+  return { title: `${category.name} | AustinG Jewellery` };
 }
 
 export default async function CategoryPage({

@@ -12,7 +12,7 @@ import { urlFor } from "@/sanity/lib/image";
 function mapProducts(products: SanityCollection["products"]): ProductCardProps[] {
   return products.map((p) => ({
     name: p.name,
-    category: p.category ?? "Jewelry",
+    category: p.category ?? "Jewellery",
     price: p.price,
     imageUrl: p.image ? urlFor(p.image).width(600).height(600).url() : undefined,
   }));
@@ -46,9 +46,8 @@ export default async function Home() {
           >
             <div className={`mx-auto ${columns === 2 ? "max-w-4xl" : "max-w-6xl"}`}>
               <h2
-                className={`font-heading text-4xl md:text-5xl text-center mb-16 italic ${
-                  isDark ? "text-white" : "text-burgundy"
-                }`}
+                className={`font-heading text-4xl md:text-5xl text-center mb-16 italic ${isDark ? "text-white" : "text-burgundy"
+                  }`}
               >
                 {collection.name}
               </h2>

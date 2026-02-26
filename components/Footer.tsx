@@ -11,7 +11,7 @@ export default function Footer() {
           Austin
         </Link>
         <p className="font-body text-xs text-white/40">
-          &copy; {new Date().getFullYear()} Austin Jewelry. All rights reserved.
+          &copy; {new Date().getFullYear()} AustinG Jewellery. All rights reserved.
         </p>
         <div className="flex items-center gap-6">
           <Link
