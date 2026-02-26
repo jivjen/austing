@@ -20,33 +20,31 @@ export default function Hero() {
   return (
     <section className="relative min-h-screen bg-burgundy text-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 pt-32 pb-24">
-        {/* Eyebrow text */}
-        <motion.p
-          className="text-center text-xs tracking-[0.25em] uppercase text-white/60 font-body mb-6"
+        {/* Main heading */}
+        <motion.h1
+          className="text-center font-heading text-6xl md:text-7xl lg:text-8xl font-normal mb-1 leading-tight text-gold"
           variants={fadeUp}
           initial="initial"
           animate="animate"
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          Exclusive handcrafted jewelry shop
-        </motion.p>
+          AustinG
+        </motion.h1>
 
-        {/* Main heading */}
-        <motion.h1
-          className="text-center font-heading text-6xl md:text-7xl lg:text-8xl font-normal italic mb-6 leading-tight"
+        {/* Subtitle */}
+        <motion.h2
+          className="text-center font-cursive text-4xl md:text-5xl lg:text-6xl text-white mb-12"
           variants={fadeUp}
           initial="initial"
           animate="animate"
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          AustinG Legacy
-          <br />
-          in Jewels
-        </motion.h1>
+          Legacy in Jewels
+        </motion.h2>
 
-        {/* Subtitle */}
+        {/* Caption */}
         <motion.p
-          className="text-center text-sm md:text-base text-white/70 font-body max-w-md mx-auto mb-20"
+          className="text-center font-cursive text-3xl md:text-4xl text-white/90 max-w-xl mx-auto mb-20 leading-relaxed"
           variants={fadeUp}
           initial="initial"
           animate="animate"

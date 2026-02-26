@@ -9,6 +9,7 @@
   --color-foreground: var(--color-burgundy);
   --font-heading: var(--font-playfair);
   --font-body: var(--font-inter);
+  --font-cursive: var(--font-great-vibes), cursive;
 }
 
 body {
