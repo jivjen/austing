@@ -3,57 +3,50 @@ import Hero from "@/components/Hero";
 import ProductGrid from "@/components/ProductGrid";
 import BrandStory from "@/components/BrandStory";
 import Footer from "@/components/Footer";
-import { client } from "@/sanity/lib/client";
-import { HOMEPAGE_COLLECTIONS_QUERY } from "@/sanity/lib/queries";
-import type { SanityCollection } from "@/sanity/lib/types";
+import { getContent, getProductsByCategoryId, productCategoryName } from "@/lib/content/store";
 import type { ProductCardProps } from "@/components/ProductCard";
-import { urlFor } from "@/sanity/lib/image";
 
-function mapProducts(products: SanityCollection["products"]): ProductCardProps[] {
-  return products.map((p) => ({
-    name: p.name,
-    category: p.category ?? "Jewellery",
-    price: p.price,
-    imageUrl: p.image ? urlFor(p.image).width(600).height(600).url() : undefined,
-  }));
-}
+export default function Home() {
+  const content = getContent();
+  const { siteSettings, hero, brandStory, categories } = content;
 
-export default async function Home() {
-  let collections: SanityCollection[] = [];
-
-  try {
-    collections = await client.fetch<SanityCollection[]>(HOMEPAGE_COLLECTIONS_QUERY);
-  } catch {
-    // Sanity not configured or empty — page renders with no collections
-  }
+  const featured = [...categories]
+    .filter((c) => c.featuredOnHomepage)
+    .sort((a, b) => a.displayOrder - b.displayOrder);
 
   return (
     <>
-      <Header />
-      <Hero />
+      <Header navLinks={siteSettings.navLinks} />
+      <Hero {...hero} />
 
-      {collections.map((collection) => {
-        const isDark = collection.displayVariant === "dark";
-        const columns = (collection.columns ?? 3) as 2 | 3;
-        const products = mapProducts(collection.products);
+      {featured.map((category) => {
+        const isDark = category.displayVariant === "dark";
+        const products: ProductCardProps[] = getProductsByCategoryId(content, category.id).map(
+          (p) => ({
+            name: p.name,
+            category: productCategoryName(content, p),
+            price: p.price,
+            imageUrl: p.image || undefined,
+          })
+        );
 
         if (products.length === 0) return null;
 
         return (
           <section
-            key={collection._id}
+            key={category.id}
             className={`py-24 md:py-32 px-6 ${isDark ? "bg-burgundy" : ""}`}
           >
-            <div className={`mx-auto ${columns === 2 ? "max-w-4xl" : "max-w-6xl"}`}>
+            <div className={`mx-auto ${category.columns === 2 ? "max-w-4xl" : "max-w-6xl"}`}>
               <h2
                 className={`font-heading text-4xl md:text-5xl text-center mb-16 italic ${isDark ? "text-white" : "text-burgundy"
                   }`}
               >
-                {collection.name}
+                {category.name}
               </h2>
               <ProductGrid
                 products={products}
-                columns={columns}
+                columns={category.columns}
                 variant={isDark ? "dark" : "light"}
               />
             </div>
@@ -61,8 +54,8 @@ export default async function Home() {
         );
       })}
 
-      <BrandStory />
-      <Footer />
+      <BrandStory {...brandStory} />
+      <Footer tagline={siteSettings.footerTagline} links={siteSettings.footerLinks} />
     </>
   );
 }

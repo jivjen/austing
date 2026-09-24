@@ -1,25 +1,10 @@
 import { notFound } from "next/navigation";
+import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import ProductGrid from "@/components/ProductGrid";
-import { client } from "@/sanity/lib/client";
-import {
-  CATEGORY_BY_SLUG_QUERY,
-  PRODUCTS_BY_CATEGORY_QUERY,
-} from "@/sanity/lib/queries";
-import type { SanityCategory, SanityProduct } from "@/sanity/lib/types";
+import { getContent, getCategoryBySlug, getProductsByCategoryId } from "@/lib/content/store";
 import type { ProductCardProps } from "@/components/ProductCard";
-import { urlFor } from "@/sanity/lib/image";
-import Link from "next/link";
-
-function mapProducts(products: SanityProduct[]): ProductCardProps[] {
-  return products.map((p) => ({
-    name: p.name,
-    category: p.category ?? "Jewellery",
-    price: p.price,
-    imageUrl: p.image ? urlFor(p.image).width(600).height(600).url() : undefined,
-  }));
-}
 
 export async function generateMetadata({
   params,
@@ -27,7 +12,7 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const category = await client.fetch<SanityCategory | null>(CATEGORY_BY_SLUG_QUERY, { slug });
+  const category = getCategoryBySlug(getContent(), slug);
   if (!category) return { title: "Collection Not Found" };
   return { title: `${category.name} | AustinG Jewellery` };
 }
@@ -38,16 +23,20 @@ export default async function CategoryPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const [category, products] = await Promise.all([
-    client.fetch<SanityCategory | null>(CATEGORY_BY_SLUG_QUERY, { slug }),
-    client.fetch<SanityProduct[]>(PRODUCTS_BY_CATEGORY_QUERY, { slug }),
-  ]);
-
+  const content = getContent();
+  const category = getCategoryBySlug(content, slug);
   if (!category) notFound();
+
+  const products: ProductCardProps[] = getProductsByCategoryId(content, category.id).map((p) => ({
+    name: p.name,
+    category: category.name,
+    price: p.price,
+    imageUrl: p.image || undefined,
+  }));
 
   return (
     <>
-      <Header variant="dark" />
+      <Header variant="dark" navLinks={content.siteSettings.navLinks} />
       <main className="pt-32 pb-24 px-6 min-h-screen">
         <div className="max-w-6xl mx-auto">
           <Link
@@ -67,7 +56,7 @@ export default async function CategoryPage({
           )}
 
           {products.length > 0 ? (
-            <ProductGrid products={mapProducts(products)} columns={3} />
+            <ProductGrid products={products} columns={3} />
           ) : (
             <p className="font-body text-burgundy/40 text-center py-16">
               No products in this collection yet.
@@ -75,7 +64,7 @@ export default async function CategoryPage({
           )}
         </div>
       </main>
-      <Footer />
+      <Footer tagline={content.siteSettings.footerTagline} links={content.siteSettings.footerLinks} />
     </>
   );
 }

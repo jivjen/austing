@@ -1,0 +1,211 @@
+{
+  "siteSettings": {
+    "navLinks": [
+      {
+        "label": "Collections",
+        "href": "/collections"
+      },
+      {
+        "label": "New Arrivals",
+        "href": "/new-arrivals"
+      },
+      {
+        "label": "About",
+        "href": "/#about"
+      }
+    ],
+    "footerTagline": "AustinG Jewellery. All rights reserved.",
+    "footerLinks": [
+      {
+        "label": "Privacy",
+        "href": "#"
+      },
+      {
+        "label": "Terms",
+        "href": "#"
+      }
+    ]
+  },
+  "hero": {
+    "heading": "AustinG",
+    "subtitle": "Legacy in Jewels",
+    "caption": "Designed to turn Moments into Memories",
+    "tagline": "Bringing your vision to life"
+  },
+  "brandStory": {
+    "heading": "We create long-lasting pieces that make a difference",
+    "body": "What's special about your product, service or company? Use this space to highlight the things that set you apart from your competition. Think of this as your elevator pitch to get the reader's attention.",
+    "features": [
+      {
+        "heading": "Sustainable and ethical",
+        "body": "Why is this product or service the user's best choice? State your reason on the header, then expound with a short explanation why."
+      },
+      {
+        "heading": "Handmade in small batches",
+        "body": "Why is this product or service the user's best choice? State your reason on the header, then expound with a short explanation why."
+      }
+    ]
+  },
+  "collectionsPage": {
+    "heading": "Our Collections",
+    "subtitle": "Explore our curated collections, each telling its own story through precious metals and gemstones."
+  },
+  "newArrivalsPage": {
+    "heading": "New Arrivals",
+    "subtitle": "The latest additions to our collection, fresh from the workshop."
+  },
+  "categories": [
+    {
+      "id": "cat-01",
+      "name": "Pendants",
+      "slug": "pendants",
+      "description": "",
+      "featuredOnHomepage": false,
+      "displayOrder": 0,
+      "displayVariant": "light",
+      "columns": 3
+    },
+    {
+      "id": "cat-02",
+      "name": "Sola & Luna Collection",
+      "slug": "sola-luna-collection",
+      "description": "Celestial-inspired pieces that capture the eternal dance of sun and moon",
+      "featuredOnHomepage": true,
+      "displayOrder": 1,
+      "displayVariant": "light",
+      "columns": 3
+    },
+    {
+      "id": "cat-03",
+      "name": "Custom Earrings",
+      "slug": "custom-earrings",
+      "description": "Bespoke earring designs crafted to your vision",
+      "featuredOnHomepage": true,
+      "displayOrder": 2,
+      "displayVariant": "dark",
+      "columns": 2
+    },
+    {
+      "id": "cat-04",
+      "name": "Necklaces",
+      "slug": "necklaces",
+      "description": "",
+      "featuredOnHomepage": false,
+      "displayOrder": 3,
+      "displayVariant": "light",
+      "columns": 3
+    },
+    {
+      "id": "cat-05",
+      "name": "Bracelets",
+      "slug": "bracelets",
+      "description": "",
+      "featuredOnHomepage": false,
+      "displayOrder": 4,
+      "displayVariant": "light",
+      "columns": 3
+    },
+    {
+      "id": "cat-06",
+      "name": "Rings",
+      "slug": "rings",
+      "description": "",
+      "featuredOnHomepage": false,
+      "displayOrder": 5,
+      "displayVariant": "light",
+      "columns": 3
+    }
+  ],
+  "products": [
+    {
+      "id": "prod-01",
+      "name": "Radiant Sun Pendant",
+      "slug": "radiant-sun-pendant",
+      "price": 550,
+      "image": "",
+      "categoryId": "cat-02",
+      "description": "A luminous gold pendant capturing the warmth of the sun, featuring hand-set citrine stones in a radial pattern"
+    },
+    {
+      "id": "prod-02",
+      "name": "Eclipse Pendant",
+      "slug": "eclipse-pendant",
+      "price": 720,
+      "image": "/uploads/products/eclipse-pendant-prod-02.jpg",
+      "categoryId": "cat-02",
+      "description": "A striking pendant where sun meets moon — half gold, half silver with a black diamond center"
+    },
+    {
+      "id": "prod-03",
+      "name": "Luna Crescent Earrings",
+      "slug": "luna-crescent-earrings",
+      "price": 650,
+      "image": "",
+      "categoryId": "cat-02",
+      "description": "Delicate crescent moon earrings with pavé diamonds that catch light like moonbeams"
+    },
+    {
+      "id": "prod-04",
+      "name": "Starfall Drop Earrings",
+      "slug": "starfall-drop-earrings",
+      "price": 580,
+      "image": "/uploads/products/starfall-drop-earrings-prod-04.jpg",
+      "categoryId": "cat-02",
+      "description": "Cascading star-shaped drops in polished gold with delicate chain links"
+    },
+    {
+      "id": "prod-05",
+      "name": "Solstice Ring",
+      "slug": "solstice-ring",
+      "price": 475,
+      "image": "",
+      "categoryId": "cat-02",
+      "description": "An elegant band featuring intertwined sun and moon motifs in brushed gold"
+    },
+    {
+      "id": "prod-06",
+      "name": "Floating Heart Earrings",
+      "slug": "floating-heart-earrings",
+      "price": 499,
+      "image": "",
+      "categoryId": "cat-03",
+      "description": "Your choice of gem set in a floating heart design — customize with ruby, sapphire, or emerald"
+    },
+    {
+      "id": "prod-07",
+      "name": "Celestial Bangle",
+      "slug": "celestial-bangle",
+      "price": 500,
+      "image": "",
+      "categoryId": "cat-02",
+      "description": "A sleek gold bangle adorned with tiny star engravings and a single moonstone accent"
+    },
+    {
+      "id": "prod-08",
+      "name": "Teardrop Gem Earrings",
+      "slug": "teardrop-gem-earrings",
+      "price": 699,
+      "image": "/uploads/products/teardrop-gem-earrings-prod-08.jpg",
+      "categoryId": "cat-03",
+      "description": "Elegant teardrop earrings with your choice of precious stone in a gold filigree setting"
+    },
+    {
+      "id": "prod-09",
+      "name": "Graceful Bow Pendant",
+      "slug": "graceful-bow-pendant",
+      "price": 499,
+      "image": "/uploads/products/graceful-bow-pendant-prod-09.jpg",
+      "categoryId": "cat-01",
+      "description": ""
+    },
+    {
+      "id": "prod-10",
+      "name": "Double Halo Hoop Earrings",
+      "slug": "double-halo-hoop-earrings",
+      "price": 499,
+      "image": "/uploads/products/double-halo-hoop-earrings-prod-10.jpg",
+      "categoryId": "cat-03",
+      "description": ""
+    }
+  ]
+}

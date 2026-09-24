@@ -6,7 +6,7 @@ import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
 import { AnimatePresence, motion } from "framer-motion";
 
-const navLinks = [
+const defaultNavLinks = [
   { label: "Collections", href: "/collections" },
   { label: "New Arrivals", href: "/new-arrivals" },
   { label: "About", href: "/#about" },
@@ -14,9 +14,10 @@ const navLinks = [
 
 interface HeaderProps {
   variant?: "light" | "dark";
+  navLinks?: { label: string; href: string }[];
 }
 
-export default function Header({ variant }: HeaderProps) {
+export default function Header({ variant, navLinks = defaultNavLinks }: HeaderProps) {
   const pathname = usePathname();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const isHome = pathname === "/";

@@ -16,7 +16,19 @@ const placeholderImages = [
   { id: 6, width: "col-span-1", height: "h-48", bg: "bg-[#9a6d80]" },
 ];
 
-export default function Hero() {
+export interface HeroProps {
+  heading?: string;
+  subtitle?: string;
+  caption?: string;
+  tagline?: string;
+}
+
+export default function Hero({
+  heading = "AustinG",
+  subtitle = "Legacy in Jewels",
+  caption = "Designed to turn Moments into Memories",
+  tagline = "Bringing your vision to life",
+}: HeroProps) {
   return (
     <section className="relative min-h-screen bg-burgundy text-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 pt-32 pb-24">
@@ -28,7 +40,7 @@ export default function Hero() {
           animate="animate"
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          AustinG
+          {heading}
         </motion.h1>
 
         {/* Subtitle */}
@@ -39,7 +51,7 @@ export default function Hero() {
           animate="animate"
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          Legacy in Jewels
+          {subtitle}
         </motion.h2>
 
         {/* Caption */}
@@ -50,7 +62,7 @@ export default function Hero() {
           animate="animate"
           transition={{ duration: 0.8, delay: 0.6 }}
         >
-          Designed to turn Moments into Memories
+          {caption}
         </motion.p>
 
         {/* Image grid placeholder */}
@@ -77,7 +89,7 @@ export default function Hero() {
           animate="animate"
           transition={{ duration: 0.8, delay: 1.0 }}
         >
-          Bringing your vision to life
+          {tagline}
         </motion.p>
       </div>
     </section>
