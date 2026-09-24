@@ -3,7 +3,7 @@
 import { useSectionDraft } from "@/hooks/useSectionDraft";
 import SaveBar from "@/components/studio/SaveBar";
 import PreviewPane from "@/components/studio/PreviewPane";
-import { TextInput } from "@/components/studio/fields";
+import { Field, TextInput } from "@/components/studio/fields";
 import Header from "@/components/Header";
 import type { SiteSettings } from "@/lib/content/types";
 
@@ -42,6 +42,13 @@ export default function HeaderEditor({ initial }: { initial: SiteSettings }) {
       />
       <div className="flex flex-col lg:flex-row gap-10">
         <div className="w-full lg:w-[420px] shrink-0">
+          <Field label="Site name" hint="Shown as the logo in the header and footer.">
+            <TextInput
+              value={data.siteName}
+              onChange={(e) => setData({ ...data, siteName: e.target.value })}
+            />
+          </Field>
+
           <p className="font-body text-[11px] tracking-[0.15em] uppercase text-burgundy/60 mb-3">
             Nav Links
           </p>
@@ -84,7 +91,7 @@ export default function HeaderEditor({ initial }: { initial: SiteSettings }) {
         </div>
         <PreviewPane label="Live preview — header as shown on inner pages">
           <div className="relative h-40 bg-white">
-            <Header variant="dark" navLinks={data.navLinks} />
+            <Header variant="dark" siteName={data.siteName} navLinks={data.navLinks} />
           </div>
         </PreviewPane>
       </div>

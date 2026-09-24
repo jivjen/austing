@@ -6,12 +6,14 @@ interface CollectionCardProps {
   name: string;
   description?: string;
   productCount: number;
+  image?: string;
 }
 
 export default function CollectionCard({
   name,
   description,
   productCount,
+  image,
 }: CollectionCardProps) {
   return (
     <motion.div
@@ -21,10 +23,19 @@ export default function CollectionCard({
       viewport={{ once: true, margin: "-50px" }}
       transition={{ duration: 0.6, ease: "easeOut" }}
     >
-      <div className="aspect-[4/3] bg-blush/60 rounded-sm mb-6 flex items-center justify-center">
-        <span className="font-heading text-burgundy/20 text-6xl italic">
-          {name.charAt(0)}
-        </span>
+      <div className="aspect-[4/3] bg-blush/60 rounded-sm mb-6 overflow-hidden flex items-center justify-center">
+        {image ? (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
+            src={image}
+            alt=""
+            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+          />
+        ) : (
+          <span className="font-heading text-burgundy/20 text-6xl italic">
+            {name.charAt(0)}
+          </span>
+        )}
       </div>
       <h3 className="font-heading text-xl text-burgundy mb-2">{name}</h3>
       {description && (

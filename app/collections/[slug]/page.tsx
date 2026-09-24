@@ -36,7 +36,7 @@ export default async function CategoryPage({
 
   return (
     <>
-      <Header variant="dark" navLinks={content.siteSettings.navLinks} />
+      <Header variant="dark" siteName={content.siteSettings.siteName} navLinks={content.siteSettings.navLinks} />
       <main className="pt-32 pb-24 px-6 min-h-screen">
         <div className="max-w-6xl mx-auto">
           <Link
@@ -45,6 +45,15 @@ export default async function CategoryPage({
           >
             &larr; All Collections
           </Link>
+
+          {category.image && (
+            // eslint-disable-next-line @next/next/no-img-element
+            <img
+              src={category.image}
+              alt=""
+              className="w-full aspect-[21/9] object-cover rounded-sm mb-10"
+            />
+          )}
 
           <h1 className="font-heading text-5xl md:text-6xl text-burgundy mb-4 italic">
             {category.name}
@@ -64,7 +73,11 @@ export default async function CategoryPage({
           )}
         </div>
       </main>
-      <Footer tagline={content.siteSettings.footerTagline} links={content.siteSettings.footerLinks} />
+      <Footer
+        siteName={content.siteSettings.siteName}
+        tagline={content.siteSettings.footerTagline}
+        links={content.siteSettings.footerLinks}
+      />
     </>
   );
 }

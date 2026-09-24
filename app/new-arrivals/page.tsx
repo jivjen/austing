@@ -20,7 +20,7 @@ export default function NewArrivalsPage() {
 
   return (
     <>
-      <Header variant="dark" navLinks={content.siteSettings.navLinks} />
+      <Header variant="dark" siteName={content.siteSettings.siteName} navLinks={content.siteSettings.navLinks} />
       <main className="pt-32 pb-24 px-6 min-h-screen">
         <div className="max-w-6xl mx-auto">
           <PageHeader
@@ -37,7 +37,11 @@ export default function NewArrivalsPage() {
           )}
         </div>
       </main>
-      <Footer tagline={content.siteSettings.footerTagline} links={content.siteSettings.footerLinks} />
+      <Footer
+        siteName={content.siteSettings.siteName}
+        tagline={content.siteSettings.footerTagline}
+        links={content.siteSettings.footerLinks}
+      />
     </>
   );
 }

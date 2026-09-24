@@ -4,6 +4,7 @@ export interface NavLink {
 }
 
 export interface SiteSettings {
+  siteName: string;
   navLinks: NavLink[];
   footerTagline: string;
   footerLinks: NavLink[];
@@ -40,6 +41,7 @@ export interface Category {
   name: string;
   slug: string;
   description: string;
+  image: string;
   featuredOnHomepage: boolean;
   displayOrder: number;
   displayVariant: "light" | "dark";

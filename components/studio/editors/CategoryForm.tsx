@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { Field, TextInput, TextArea, Toggle, SwatchOption } from "@/components/studio/fields";
 import PreviewPane from "@/components/studio/PreviewPane";
+import ImageUploader from "@/components/studio/ImageUploader";
 import CollectionCard from "@/components/CollectionCard";
 import { slugify } from "@/lib/slug";
 import type { Category, Product } from "@/lib/content/types";
@@ -32,6 +33,7 @@ export default function CategoryForm({ mode, category, allCategories, products }
   const [slug, setSlug] = useState(category?.slug ?? "");
   const [slugTouched, setSlugTouched] = useState(mode === "edit");
   const [description, setDescription] = useState(category?.description ?? "");
+  const [image, setImage] = useState(category?.image ?? "");
   const [featuredOnHomepage, setFeaturedOnHomepage] = useState(category?.featuredOnHomepage ?? false);
   const [displayOrder, setDisplayOrder] = useState<number>(category?.displayOrder ?? 0);
   const [displayVariant, setDisplayVariant] = useState<"light" | "dark">(
@@ -87,6 +89,7 @@ export default function CategoryForm({ mode, category, allCategories, products }
       name: name.trim(),
       slug: finalSlug,
       description,
+      image,
       featuredOnHomepage,
       displayOrder: Number(displayOrder) || 0,
       displayVariant,
@@ -164,6 +167,15 @@ export default function CategoryForm({ mode, category, allCategories, products }
           </Field>
 
           <div className="mb-6">
+            <ImageUploader
+              value={image}
+              onChange={setImage}
+              folder="categories"
+              label="Collection Image"
+            />
+          </div>
+
+          <div className="mb-6">
             <Toggle
               checked={featuredOnHomepage}
               onChange={setFeaturedOnHomepage}
@@ -218,6 +230,7 @@ export default function CategoryForm({ mode, category, allCategories, products }
               name={name || "Collection name"}
               description={description}
               productCount={productCount}
+              image={image}
             />
           </div>
         </PreviewPane>

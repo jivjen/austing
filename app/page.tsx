@@ -16,7 +16,7 @@ export default function Home() {
 
   return (
     <>
-      <Header navLinks={siteSettings.navLinks} />
+      <Header siteName={siteSettings.siteName} navLinks={siteSettings.navLinks} />
       <Hero {...hero} />
 
       {featured.map((category) => {
@@ -55,7 +55,11 @@ export default function Home() {
       })}
 
       <BrandStory {...brandStory} />
-      <Footer tagline={siteSettings.footerTagline} links={siteSettings.footerLinks} />
+      <Footer
+        siteName={siteSettings.siteName}
+        tagline={siteSettings.footerTagline}
+        links={siteSettings.footerLinks}
+      />
     </>
   );
 }

@@ -74,7 +74,20 @@ export default function CategoriesList({
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
         {categories.map((category) => (
-          <div key={category.id} className="bg-white rounded-md border border-burgundy/10 p-5">
+          <div
+            key={category.id}
+            className="bg-white rounded-md border border-burgundy/10 overflow-hidden p-5"
+          >
+            <div className="aspect-[16/9] bg-blush/30 rounded-sm mb-4 -mx-5 -mt-5 w-[calc(100%+2.5rem)] flex items-center justify-center overflow-hidden">
+              {category.image ? (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img src={category.image} alt="" className="w-full h-full object-cover" />
+              ) : (
+                <span className="font-heading text-burgundy/20 text-4xl italic">
+                  {category.name.charAt(0)}
+                </span>
+              )}
+            </div>
             <div className="flex items-start justify-between gap-2 mb-2">
               <h3 className="font-heading text-lg text-burgundy">{category.name}</h3>
               {category.featuredOnHomepage && (

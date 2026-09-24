@@ -90,7 +90,7 @@ export default function FooterEditor({ initial }: { initial: SiteSettings }) {
           </button>
         </div>
         <PreviewPane>
-          <Footer tagline={data.footerTagline} links={data.footerLinks} />
+          <Footer siteName={data.siteName} tagline={data.footerTagline} links={data.footerLinks} />
         </PreviewPane>
       </div>
     </div>

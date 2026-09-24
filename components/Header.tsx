@@ -14,10 +14,11 @@ const defaultNavLinks = [
 
 interface HeaderProps {
   variant?: "light" | "dark";
+  siteName?: string;
   navLinks?: { label: string; href: string }[];
 }
 
-export default function Header({ variant, navLinks = defaultNavLinks }: HeaderProps) {
+export default function Header({ variant, siteName = "AustinG", navLinks = defaultNavLinks }: HeaderProps) {
   const pathname = usePathname();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -49,7 +50,7 @@ export default function Header({ variant, navLinks = defaultNavLinks }: HeaderPr
           className="font-heading text-2xl md:text-3xl font-normal text-gold z-50 relative"
           onClick={() => setIsMobileMenuOpen(false)}
         >
-          AustinG
+          {siteName}
         </Link>
         <nav className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => {

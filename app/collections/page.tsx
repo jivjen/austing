@@ -15,7 +15,7 @@ export default function CollectionsPage() {
 
   return (
     <>
-      <Header variant="dark" navLinks={siteSettings.navLinks} />
+      <Header variant="dark" siteName={siteSettings.siteName} navLinks={siteSettings.navLinks} />
       <main className="pt-32 pb-24 px-6 min-h-screen">
         <div className="max-w-6xl mx-auto">
           <PageHeader heading={collectionsPage.heading} subtitle={collectionsPage.subtitle} />
@@ -27,13 +27,18 @@ export default function CollectionsPage() {
                   name={cat.name}
                   description={cat.description}
                   productCount={products.filter((p) => p.categoryId === cat.id).length}
+                  image={cat.image}
                 />
               </Link>
             ))}
           </div>
         </div>
       </main>
-      <Footer tagline={siteSettings.footerTagline} links={siteSettings.footerLinks} />
+      <Footer
+        siteName={siteSettings.siteName}
+        tagline={siteSettings.footerTagline}
+        links={siteSettings.footerLinks}
+      />
     </>
   );
 }

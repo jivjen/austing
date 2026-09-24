@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 interface FooterProps {
+  siteName?: string;
   tagline?: string;
   links?: { label: string; href: string }[];
 }
@@ -11,6 +12,7 @@ const defaultLinks = [
 ];
 
 export default function Footer({
+  siteName = "AustinG",
   tagline = "AustinG Jewellery. All rights reserved.",
   links = defaultLinks,
 }: FooterProps) {
@@ -21,7 +23,7 @@ export default function Footer({
           href="/"
           className="font-heading text-sm tracking-[0.3em] uppercase"
         >
-          Austin
+          {siteName}
         </Link>
         <p className="font-body text-xs text-white/40">
           &copy; {new Date().getFullYear()} {tagline}
