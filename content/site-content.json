@@ -41,7 +41,14 @@
     "tagline": "Bringing your vision to life",
     "ctaLabel": "Explore Collections",
     "ctaHref": "/collections",
-    "images": ["", "", "", "", "", ""]
+    "images": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
   },
   "brandStory": {
     "heading": "We create long-lasting pieces that make a difference",
@@ -71,6 +78,7 @@
       "name": "Pendants",
       "slug": "pendants",
       "description": "",
+      "image": "/uploads/categories/pendants-test-1790261359613.jpg",
       "featuredOnHomepage": false,
       "displayOrder": 0,
       "displayVariant": "light",
@@ -81,6 +89,7 @@
       "name": "Sola & Luna Collection",
       "slug": "sola-luna-collection",
       "description": "Celestial-inspired pieces that capture the eternal dance of sun and moon",
+      "image": "",
       "featuredOnHomepage": true,
       "displayOrder": 1,
       "displayVariant": "light",
@@ -91,6 +100,7 @@
       "name": "Custom Earrings",
       "slug": "custom-earrings",
       "description": "Bespoke earring designs crafted to your vision",
+      "image": "",
       "featuredOnHomepage": true,
       "displayOrder": 2,
       "displayVariant": "dark",
@@ -101,6 +111,7 @@
       "name": "Necklaces",
       "slug": "necklaces",
       "description": "",
+      "image": "",
       "featuredOnHomepage": false,
       "displayOrder": 3,
       "displayVariant": "light",
@@ -111,6 +122,7 @@
       "name": "Bracelets",
       "slug": "bracelets",
       "description": "",
+      "image": "",
       "featuredOnHomepage": false,
       "displayOrder": 4,
       "displayVariant": "light",
@@ -121,6 +133,7 @@
       "name": "Rings",
       "slug": "rings",
       "description": "",
+      "image": "",
       "featuredOnHomepage": false,
       "displayOrder": 5,
       "displayVariant": "light",
