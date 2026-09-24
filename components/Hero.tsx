@@ -1,19 +1,20 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const fadeUp = {
   initial: { opacity: 0, y: 30 },
   animate: { opacity: 1, y: 0 },
 };
 
-const placeholderImages = [
-  { id: 1, width: "col-span-1", height: "h-48", bg: "bg-[#8a5c6e]" },
-  { id: 2, width: "col-span-1", height: "h-48", bg: "bg-[#7d4f63]" },
-  { id: 3, width: "col-span-1", height: "h-48", bg: "bg-[#9a6d80]" },
-  { id: 4, width: "col-span-1", height: "h-48", bg: "bg-[#7d4f63]" },
-  { id: 5, width: "col-span-1", height: "h-48", bg: "bg-[#8a5c6e]" },
-  { id: 6, width: "col-span-1", height: "h-48", bg: "bg-[#9a6d80]" },
+const placeholderColors = [
+  "bg-[#8a5c6e]",
+  "bg-[#7d4f63]",
+  "bg-[#9a6d80]",
+  "bg-[#7d4f63]",
+  "bg-[#8a5c6e]",
+  "bg-[#9a6d80]",
 ];
 
 export interface HeroProps {
@@ -21,6 +22,9 @@ export interface HeroProps {
   subtitle?: string;
   caption?: string;
   tagline?: string;
+  ctaLabel?: string;
+  ctaHref?: string;
+  images?: string[];
 }
 
 export default function Hero({
@@ -28,6 +32,9 @@ export default function Hero({
   subtitle = "Legacy in Jewels",
   caption = "Designed to turn Moments into Memories",
   tagline = "Bringing your vision to life",
+  ctaLabel = "Explore Collections",
+  ctaHref = "/collections",
+  images = [],
 }: HeroProps) {
   return (
     <section className="relative min-h-screen bg-burgundy text-white overflow-hidden">
@@ -56,7 +63,7 @@ export default function Hero({
 
         {/* Caption */}
         <motion.p
-          className="text-center font-cursive text-3xl md:text-4xl text-white/90 max-w-xl mx-auto mb-20 leading-relaxed"
+          className="text-center font-cursive text-3xl md:text-4xl text-white/90 max-w-xl mx-auto mb-10 leading-relaxed"
           variants={fadeUp}
           initial="initial"
           animate="animate"
@@ -65,20 +72,41 @@ export default function Hero({
           {caption}
         </motion.p>
 
-        {/* Image grid placeholder */}
+        {/* Primary CTA */}
+        <motion.div
+          className="flex justify-center mb-16"
+          variants={fadeUp}
+          initial="initial"
+          animate="animate"
+          transition={{ duration: 0.8, delay: 0.7 }}
+        >
+          <Link
+            href={ctaHref}
+            className="inline-block font-body text-xs tracking-[0.2em] uppercase bg-gold text-burgundy px-10 py-4 rounded-sm hover:bg-white transition-colors duration-300"
+          >
+            {ctaLabel}
+          </Link>
+        </motion.div>
+
+        {/* Image grid */}
         <motion.div
           className="grid grid-cols-2 md:grid-cols-3 gap-3 max-w-4xl mx-auto"
           variants={fadeUp}
           initial="initial"
           animate="animate"
-          transition={{ duration: 0.8, delay: 0.8 }}
+          transition={{ duration: 0.8, delay: 0.9 }}
         >
-          {placeholderImages.map((img) => (
-            <div
-              key={img.id}
-              className={`${img.width} ${img.height} ${img.bg} rounded-sm`}
-            />
-          ))}
+          {placeholderColors.map((color, i) => {
+            const src = images[i];
+            return (
+              <div key={i} className={`col-span-1 h-48 rounded-sm overflow-hidden ${src ? "" : color}`}>
+                {src && (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img src={src} alt="" className="w-full h-full object-cover" />
+                )}
+              </div>
+            );
+          })}
         </motion.div>
 
         {/* Tagline below grid */}
@@ -87,7 +115,7 @@ export default function Hero({
           variants={fadeUp}
           initial="initial"
           animate="animate"
-          transition={{ duration: 0.8, delay: 1.0 }}
+          transition={{ duration: 0.8, delay: 1.1 }}
         >
           {tagline}
         </motion.p>

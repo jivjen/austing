@@ -17,6 +17,14 @@
     "footerTagline": "AustinG Jewellery. All rights reserved.",
     "footerLinks": [
       {
+        "label": "Collections",
+        "href": "/collections"
+      },
+      {
+        "label": "New Arrivals",
+        "href": "/new-arrivals"
+      },
+      {
         "label": "Privacy",
         "href": "#"
       },
@@ -30,7 +38,10 @@
     "heading": "AustinG",
     "subtitle": "Legacy in Jewels",
     "caption": "Designed to turn Moments into Memories",
-    "tagline": "Bringing your vision to life"
+    "tagline": "Bringing your vision to life",
+    "ctaLabel": "Explore Collections",
+    "ctaHref": "/collections",
+    "images": ["", "", "", "", "", ""]
   },
   "brandStory": {
     "heading": "We create long-lasting pieces that make a difference",

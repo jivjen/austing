@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
@@ -20,13 +20,28 @@ interface HeaderProps {
 export default function Header({ variant, navLinks = defaultNavLinks }: HeaderProps) {
   const pathname = usePathname();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const isHome = pathname === "/";
-  const isDark = variant === "dark" && !isHome;
+
+  useEffect(() => {
+    if (!isHome) return;
+    function handleScroll() {
+      setScrolled(window.scrollY > 40);
+    }
+    handleScroll();
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [isHome]);
+
+  // On inner pages a "dark" variant always shows solid chrome; on the
+  // homepage the header starts transparent over the hero and picks up
+  // the same solid chrome once scrolled, so navigation is never lost.
+  const isDark = (variant === "dark" && !isHome) || (isHome && scrolled);
 
   return (
     <>
       <header
-        className={`${isHome ? "absolute" : "fixed"} top-0 left-0 w-full z-50 px-8 py-6 flex items-center justify-between ${isDark && !isMobileMenuOpen ? "bg-white/90 backdrop-blur-md border-b border-burgundy/10" : ""
+        className={`fixed top-0 left-0 w-full z-50 px-8 py-6 flex items-center justify-between transition-colors duration-300 ${isDark && !isMobileMenuOpen ? "bg-white/90 backdrop-blur-md border-b border-burgundy/10" : ""
           }`}
       >
         <Link

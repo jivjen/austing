@@ -14,6 +14,9 @@ export interface HeroContent {
   subtitle: string;
   caption: string;
   tagline: string;
+  ctaLabel: string;
+  ctaHref: string;
+  images: string[];
 }
 
 export interface BrandStoryFeature {
