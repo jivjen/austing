@@ -143,6 +143,15 @@
   ],
   "products": [
     {
+      "name": "Luxe Link Bracelet",
+      "slug": "luxe-link-bracelet",
+      "price": 299,
+      "image": "/uploads/products/gemini-generated-image-2us1oa2us1oa2us1-1790331149979.jpg",
+      "categoryId": "cat-05",
+      "description": "",
+      "id": "prod-66"
+    },
+    {
       "name": "Sculpted Teardrop Earrings",
       "slug": "sculpted-teardrop-earrings",
       "price": 299,
