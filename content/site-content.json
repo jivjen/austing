@@ -144,19 +144,19 @@
   "products": [
     {
       "id": "prod-24",
-      "name": "Radiant Cross Pendant",
-      "slug": "radiant-cross-pendant",
+      "name": "Graceful Bloom Pendant",
+      "slug": "graceful-bloom-pendant",
       "price": 249,
-      "image": "/uploads/products/gemini-generated-image-t6vrort6vrort6vr-1790319475000.jpg",
+      "image": "/uploads/products/gemini-generated-image-u4yz1pu4yz1pu4yz-1790319502149.jpg",
       "categoryId": "cat-01",
       "description": ""
     },
     {
       "id": "prod-23",
-      "name": "Golden Charm Pendant",
-      "slug": "golden-charm-pendant",
+      "name": "Diamond Frame Pendant",
+      "slug": "diamond-frame-pendant",
       "price": 249,
-      "image": "/uploads/products/gemini-generated-image-s4k3pgs4k3pgs4k3-1790319340068.jpg",
+      "image": "/uploads/products/gemini-generated-image-suuyh4suuyh4suuy-1790319399911.jpg",
       "categoryId": "cat-01",
       "description": ""
     },
@@ -312,15 +312,6 @@
       "image": "",
       "categoryId": "cat-02",
       "description": "A sleek gold bangle adorned with tiny star engravings and a single moonstone accent"
-    },
-    {
-      "id": "prod-08",
-      "name": "Teardrop Gem Earrings",
-      "slug": "teardrop-gem-earrings",
-      "price": 699,
-      "image": "/uploads/products/teardrop-gem-earrings-prod-08.jpg",
-      "categoryId": "cat-03",
-      "description": "Elegant teardrop earrings with your choice of precious stone in a gold filigree setting"
     },
     {
       "id": "prod-10",
