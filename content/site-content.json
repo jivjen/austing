@@ -143,6 +143,15 @@
   ],
   "products": [
     {
+      "name": "Minimal Starfish Earrings",
+      "slug": "minimal-starfish-earrings",
+      "price": 299,
+      "image": "/uploads/products/gemini-generated-image-hpcaqnhpcaqnhpca-1790331811302.jpg",
+      "categoryId": "cat-03",
+      "description": "",
+      "id": "prod-82"
+    },
+    {
       "name": "Infinity Love Bracelet",
       "slug": "infinity-love-bracelet",
       "price": 299,
