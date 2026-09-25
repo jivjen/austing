@@ -144,10 +144,10 @@
   "products": [
     {
       "id": "prod-21",
-      "name": "Rosé Charm Pendant",
-      "slug": "ros-charm-pendant",
+      "name": "Pearl Fan Pendant",
+      "slug": "pearl-fan-pendant",
       "price": 249,
-      "image": "/uploads/products/gemini-generated-image-ole0niole0niole0-1790318926236.jpg",
+      "image": "/uploads/products/gemini-generated-image-p4ibsmp4ibsmp4ib-1790318956412.jpg",
       "categoryId": "cat-01",
       "description": ""
     },
