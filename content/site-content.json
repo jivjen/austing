@@ -143,6 +143,15 @@
   ],
   "products": [
     {
+      "id": "prod-23",
+      "name": "Crystal Teardrop Pendant",
+      "slug": "crystal-teardrop-pendant",
+      "price": 249,
+      "image": "/uploads/products/gemini-generated-image-rjx9w7rjx9w7rjx9-1790319110509.jpg",
+      "categoryId": "cat-01",
+      "description": ""
+    },
+    {
       "id": "prod-22",
       "name": "Royal Heart Pendant",
       "slug": "royal-heart-pendant",
