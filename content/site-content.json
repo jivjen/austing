@@ -144,10 +144,10 @@
   "products": [
     {
       "id": "prod-26",
-      "name": "Timeless Hoop Earrings",
-      "slug": "timeless-hoop-earrings",
-      "price": 299,
-      "image": "/uploads/products/gemini-generated-image-ystthgystthgystt-1790321256217.jpg",
+      "name": "Butterfly Grace Pendant",
+      "slug": "butterfly-grace-pendant",
+      "price": 249,
+      "image": "/uploads/products/gemini-generated-image-ysqa3eysqa3eysqa-1790321661804.jpg",
       "categoryId": "cat-01",
       "description": ""
     },
