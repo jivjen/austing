@@ -179,15 +179,6 @@
       "description": "Cascading star-shaped drops in polished gold with delicate chain links"
     },
     {
-      "id": "prod-08",
-      "name": "Teardrop Gem Earrings",
-      "slug": "teardrop-gem-earrings",
-      "price": 699,
-      "image": "/uploads/products/teardrop-gem-earrings-prod-08.jpg",
-      "categoryId": "cat-03",
-      "description": "Elegant teardrop earrings with your choice of precious stone in a gold filigree setting"
-    },
-    {
       "id": "prod-09",
       "name": "Graceful Bow Pendant",
       "slug": "graceful-bow-pendant",
