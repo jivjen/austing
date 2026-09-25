@@ -143,6 +143,15 @@
   ],
   "products": [
     {
+      "name": "Diamond Geometric Bracelet",
+      "slug": "diamond-geometric-bracelet",
+      "price": 299,
+      "image": "/uploads/products/gemini-generated-image-nml7bhnml7bhnml7-1790331974304.jpg",
+      "categoryId": "cat-05",
+      "description": "",
+      "id": "prod-85"
+    },
+    {
       "name": "Sculpted Teardrop Earrings",
       "slug": "sculpted-teardrop-earrings-2",
       "price": 299,
