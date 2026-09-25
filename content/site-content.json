@@ -143,12 +143,21 @@
   ],
   "products": [
     {
-      "id": "prod-25",
-      "name": "Graceful Bee Earrings",
-      "slug": "graceful-bee-earrings",
+      "id": "prod-26",
+      "name": "Classic Teardrop Earrings",
+      "slug": "classic-teardrop-earrings",
       "price": 299,
-      "image": "/uploads/products/gemini-generated-image-w0givmw0givmw0gi-1790321159551.jpg",
+      "image": "/uploads/products/gemini-generated-image-w18lyiw18lyiw18l-1790321195482.jpg",
       "categoryId": "cat-03",
+      "description": ""
+    },
+    {
+      "id": "prod-25",
+      "name": "Floral Charm Pendant",
+      "slug": "floral-charm-pendant",
+      "price": 249,
+      "image": "/uploads/products/gemini-generated-image-yza2dbyza2dbyza2-1790319955808.jpg",
+      "categoryId": "cat-01",
       "description": ""
     },
     {
