@@ -143,6 +143,15 @@
   ],
   "products": [
     {
+      "name": "Sunburst Bloom Earrings",
+      "slug": "sunburst-bloom-earrings",
+      "price": 299,
+      "image": "/uploads/products/gemini-generated-image-4yktqf4yktqf4ykt-1790331252531.jpg",
+      "categoryId": "cat-03",
+      "description": "",
+      "id": "prod-69"
+    },
+    {
       "name": "Radiant Heart Bracelet",
       "slug": "radiant-heart-bracelet",
       "price": 299,
