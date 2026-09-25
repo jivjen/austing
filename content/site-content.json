@@ -143,6 +143,15 @@
   ],
   "products": [
     {
+      "name": "Sculpted Wave Earrings",
+      "slug": "sculpted-wave-earrings",
+      "price": 0,
+      "image": "/uploads/products/gemini-generated-image-gw7w7cgw7w7cgw7w-1790331750669.jpg",
+      "categoryId": "cat-03",
+      "description": "",
+      "id": "prod-80"
+    },
+    {
       "name": "Pearl Starfish Earrings",
       "slug": "pearl-starfish-earrings",
       "price": 299,
