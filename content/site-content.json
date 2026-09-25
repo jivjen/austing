@@ -206,15 +206,6 @@
       "description": "An elegant band featuring intertwined sun and moon motifs in brushed gold"
     },
     {
-      "id": "prod-06",
-      "name": "Floating Heart Earrings",
-      "slug": "floating-heart-earrings",
-      "price": 499,
-      "image": "",
-      "categoryId": "cat-03",
-      "description": "Your choice of gem set in a floating heart design — customize with ruby, sapphire, or emerald"
-    },
-    {
       "id": "prod-07",
       "name": "Celestial Bangle",
       "slug": "celestial-bangle",
@@ -239,6 +230,15 @@
       "price": 499,
       "image": "/uploads/products/graceful-bow-pendant-prod-09.jpg",
       "categoryId": "cat-01",
+      "description": ""
+    },
+    {
+      "id": "prod-10",
+      "name": "Double Halo Hoop Earrings",
+      "slug": "double-halo-hoop-earrings",
+      "price": 499,
+      "image": "/uploads/products/double-halo-hoop-earrings-prod-10.jpg",
+      "categoryId": "cat-03",
       "description": ""
     }
   ]
