@@ -143,6 +143,15 @@
   ],
   "products": [
     {
+      "name": "Sculpted Teardrop Earrings",
+      "slug": "sculpted-teardrop-earrings-2",
+      "price": 299,
+      "image": "/uploads/products/gemini-generated-image-m9gkkpm9gkkpm9gk-1790331939932.jpg",
+      "categoryId": "cat-03",
+      "description": "",
+      "id": "prod-84"
+    },
+    {
       "name": "Diamond U-Link Bracelet",
       "slug": "diamond-u-link-bracelet",
       "price": 299,
