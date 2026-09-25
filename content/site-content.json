@@ -143,15 +143,6 @@
   ],
   "products": [
     {
-      "id": "prod-23",
-      "name": "Radiant Cross Pendant",
-      "slug": "radiant-cross-pendant",
-      "price": 249,
-      "image": "/uploads/products/gemini-generated-image-rl4rwsrl4rwsrl4r-1790319137741.jpg",
-      "categoryId": "cat-01",
-      "description": ""
-    },
-    {
       "id": "prod-22",
       "name": "Royal Heart Pendant",
       "slug": "royal-heart-pendant",
@@ -258,15 +249,6 @@
       "image": "/uploads/products/gemini-generated-image-1mpz6w1mpz6w1mpz-1790316826645.jpg",
       "categoryId": "cat-01",
       "description": ""
-    },
-    {
-      "id": "prod-02",
-      "name": "Eclipse Pendant",
-      "slug": "eclipse-pendant",
-      "price": 720,
-      "image": "/uploads/products/eclipse-pendant-prod-02.jpg",
-      "categoryId": "cat-02",
-      "description": "A striking pendant where sun meets moon — half gold, half silver with a black diamond center"
     },
     {
       "id": "prod-03",
