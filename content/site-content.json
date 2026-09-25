@@ -143,6 +143,15 @@
   ],
   "products": [
     {
+      "name": "Elegant Bow Earring",
+      "slug": "elegant-bow-earring",
+      "price": 299,
+      "image": "",
+      "categoryId": "cat-03",
+      "description": "",
+      "id": "prod-76"
+    },
+    {
       "name": "Elegant Bow Earrings",
       "slug": "elegant-bow-earrings",
       "price": 299,
