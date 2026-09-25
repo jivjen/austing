@@ -144,10 +144,10 @@
   "products": [
     {
       "id": "prod-15",
-      "name": "Celestial Bloom Pendant",
-      "slug": "celestial-bloom-pendant",
+      "name": "Petite Fleur Pendant",
+      "slug": "petite-fleur-pendant",
       "price": 249,
-      "image": "/uploads/products/gemini-generated-image-cbgmyjcbgmyjcbgm-1790318041540.jpg",
+      "image": "/uploads/products/gemini-generated-image-ckpw85ckpw85ckpw-1790318078501.jpg",
       "categoryId": "cat-01",
       "description": ""
     },
