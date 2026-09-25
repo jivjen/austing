@@ -188,15 +188,6 @@
       "description": "An elegant band featuring intertwined sun and moon motifs in brushed gold"
     },
     {
-      "id": "prod-06",
-      "name": "Floating Heart Earrings",
-      "slug": "floating-heart-earrings",
-      "price": 499,
-      "image": "",
-      "categoryId": "cat-03",
-      "description": "Your choice of gem set in a floating heart design — customize with ruby, sapphire, or emerald"
-    },
-    {
       "id": "prod-08",
       "name": "Teardrop Gem Earrings",
       "slug": "teardrop-gem-earrings",
