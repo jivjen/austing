@@ -143,6 +143,24 @@
   ],
   "products": [
     {
+      "id": "prod-12",
+      "name": "Bloom Royale Pendant",
+      "slug": "bloom-royale-pendant",
+      "price": 299,
+      "image": "/uploads/products/gemini-generated-image-4obs24obs24obs24-1790317272891.jpg",
+      "categoryId": "cat-01",
+      "description": ""
+    },
+    {
+      "id": "prod-11",
+      "name": "Bow Pendant",
+      "slug": "bow-pendant",
+      "price": 299,
+      "image": "/uploads/products/gemini-generated-image-1mpz6w1mpz6w1mpz-1790316826645.jpg",
+      "categoryId": "cat-01",
+      "description": ""
+    },
+    {
       "id": "prod-01",
       "name": "Radiant Sun Pendant",
       "slug": "radiant-sun-pendant",
