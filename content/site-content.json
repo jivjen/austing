@@ -143,6 +143,15 @@
   ],
   "products": [
     {
+      "name": "Classic Hoop Earrings",
+      "slug": "classic-hoop-earrings",
+      "price": 299,
+      "image": "/uploads/products/gemini-generated-image-gfr0bcgfr0bcgfr0-1790331690186.jpg",
+      "categoryId": "cat-03",
+      "description": "",
+      "id": "prod-78"
+    },
+    {
       "name": "Celestial Starfish Earring",
       "slug": "celestial-starfish-earring",
       "price": 299,
