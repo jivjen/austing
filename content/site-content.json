@@ -144,10 +144,10 @@
   "products": [
     {
       "id": "prod-23",
-      "name": "Graceful Heart Pendant",
-      "slug": "graceful-heart-pendant",
+      "name": "Diamond Frame Pendant",
+      "slug": "diamond-frame-pendant",
       "price": 249,
-      "image": "/uploads/products/gemini-generated-image-stexnestexnestex-1790319368847.jpg",
+      "image": "/uploads/products/gemini-generated-image-suuyh4suuyh4suuy-1790319399911.jpg",
       "categoryId": "cat-01",
       "description": ""
     },
@@ -305,13 +305,13 @@
       "description": "A sleek gold bangle adorned with tiny star engravings and a single moonstone accent"
     },
     {
-      "id": "prod-08",
-      "name": "Teardrop Gem Earrings",
-      "slug": "teardrop-gem-earrings",
-      "price": 699,
-      "image": "/uploads/products/teardrop-gem-earrings-prod-08.jpg",
+      "id": "prod-10",
+      "name": "Double Halo Hoop Earrings",
+      "slug": "double-halo-hoop-earrings",
+      "price": 499,
+      "image": "/uploads/products/double-halo-hoop-earrings-prod-10.jpg",
       "categoryId": "cat-03",
-      "description": "Elegant teardrop earrings with your choice of precious stone in a gold filigree setting"
+      "description": ""
     }
   ]
 }
