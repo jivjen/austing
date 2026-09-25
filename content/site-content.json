@@ -303,15 +303,6 @@
       "image": "/uploads/products/teardrop-gem-earrings-prod-08.jpg",
       "categoryId": "cat-03",
       "description": "Elegant teardrop earrings with your choice of precious stone in a gold filigree setting"
-    },
-    {
-      "id": "prod-10",
-      "name": "Double Halo Hoop Earrings",
-      "slug": "double-halo-hoop-earrings",
-      "price": 499,
-      "image": "/uploads/products/double-halo-hoop-earrings-prod-10.jpg",
-      "categoryId": "cat-03",
-      "description": ""
     }
   ]
 }
