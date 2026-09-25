@@ -188,13 +188,13 @@
       "description": "Delicate crescent moon earrings with pavé diamonds that catch light like moonbeams"
     },
     {
-      "id": "prod-04",
-      "name": "Starfall Drop Earrings",
-      "slug": "starfall-drop-earrings",
-      "price": 580,
-      "image": "/uploads/products/starfall-drop-earrings-prod-04.jpg",
+      "id": "prod-05",
+      "name": "Solstice Ring",
+      "slug": "solstice-ring",
+      "price": 475,
+      "image": "",
       "categoryId": "cat-02",
-      "description": "Cascading star-shaped drops in polished gold with delicate chain links"
+      "description": "An elegant band featuring intertwined sun and moon motifs in brushed gold"
     },
     {
       "id": "prod-06",
