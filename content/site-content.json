@@ -144,10 +144,10 @@
   "products": [
     {
       "id": "prod-24",
-      "name": "Graceful Bloom Pendant",
-      "slug": "graceful-bloom-pendant",
+      "name": "Pearl Blossom Pendant",
+      "slug": "pearl-blossom-pendant",
       "price": 249,
-      "image": "/uploads/products/gemini-generated-image-u4yz1pu4yz1pu4yz-1790319502149.jpg",
+      "image": "/uploads/products/gemini-generated-image-usnbjgusnbjgusnb-1790319529639.jpg",
       "categoryId": "cat-01",
       "description": ""
     },
