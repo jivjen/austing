@@ -21,6 +21,14 @@ export function getProductsByCategoryId(content: SiteContent, categoryId: string
   return content.products.filter((p) => p.categoryId === categoryId);
 }
 
+export function getProductBySlug(content: SiteContent, slug: string) {
+  return content.products.find((p) => p.slug === slug);
+}
+
+export function getProductById(content: SiteContent, id: string) {
+  return content.products.find((p) => p.id === id);
+}
+
 export function productCategoryName(content: SiteContent, product: { categoryId: string }) {
   return getCategoryById(content, product.categoryId)?.name ?? "Jewellery";
 }

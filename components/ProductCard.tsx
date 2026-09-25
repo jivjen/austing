@@ -8,6 +8,7 @@ export interface ProductCardProps {
   price: number;
   subtitle?: string;
   imageUrl?: string;
+  slug?: string;
   variant?: "light" | "dark";
 }
 

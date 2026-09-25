@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <>
       <Header siteName={siteSettings.siteName} navLinks={siteSettings.navLinks} />
-      <Hero {...hero} />
+      <Hero {...hero} products={content.products} />
 
       {featured.map((category) => {
         const isDark = category.displayVariant === "dark";
@@ -27,6 +27,7 @@ export default function Home() {
             category: productCategoryName(content, p),
             price: p.price,
             imageUrl: p.image || undefined,
+            slug: p.slug,
           })
         );
 

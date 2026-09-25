@@ -3,24 +3,29 @@
 import { useSectionDraft } from "@/hooks/useSectionDraft";
 import SaveBar from "@/components/studio/SaveBar";
 import PreviewPane from "@/components/studio/PreviewPane";
-import ImageUploader from "@/components/studio/ImageUploader";
 import { Field, TextInput, TextArea } from "@/components/studio/fields";
 import Hero from "@/components/Hero";
-import type { HeroContent } from "@/lib/content/types";
+import type { HeroContent, Product } from "@/lib/content/types";
 
-const HERO_IMAGE_SLOTS = 6;
+const HERO_TILE_SLOTS = 6;
 
-export default function HeroEditor({ initial }: { initial: HeroContent }) {
+export default function HeroEditor({
+  initial,
+  products,
+}: {
+  initial: HeroContent;
+  products: Product[];
+}) {
   const { data, setData, dirty, saving, error, savedAt, save, discard } = useSectionDraft(
     "hero",
     initial
   );
 
-  function updateImage(index: number, path: string) {
-    const next = [...data.images];
-    while (next.length < HERO_IMAGE_SLOTS) next.push("");
-    next[index] = path;
-    setData({ ...data, images: next });
+  function updateTile(index: number, productId: string) {
+    const next = [...data.featuredProductIds];
+    while (next.length < HERO_TILE_SLOTS) next.push("");
+    next[index] = productId;
+    setData({ ...data, featuredProductIds: next });
   }
 
   return (
@@ -77,25 +82,50 @@ export default function HeroEditor({ initial }: { initial: HeroContent }) {
           </Field>
 
           <p className="font-body text-[11px] tracking-[0.15em] uppercase text-burgundy/60 mb-3">
-            Hero images
+            Featured products
           </p>
           <p className="font-body text-xs text-burgundy/40 mb-3 -mt-2">
-            Fill any of these 6 tiles with a photo — empty ones show a plain color block instead.
+            Pick a product for any of these 6 tiles — it shows that product&apos;s photo and links
+            straight to it. Leave any blank for a plain color block instead.
           </p>
-          <div className="grid grid-cols-3 gap-3 mb-6">
-            {Array.from({ length: HERO_IMAGE_SLOTS }).map((_, i) => (
-              <ImageUploader
-                key={i}
-                value={data.images[i] ?? ""}
-                onChange={(path) => updateImage(i, path)}
-                folder="hero"
-                label={`Tile ${i + 1}`}
-              />
-            ))}
+          <div className="grid grid-cols-2 gap-3 mb-6">
+            {Array.from({ length: HERO_TILE_SLOTS }).map((_, i) => {
+              const selectedId = data.featuredProductIds[i] ?? "";
+              const product = products.find((p) => p.id === selectedId);
+              return (
+                <div
+                  key={i}
+                  className="bg-white border border-burgundy/10 rounded-sm p-3 flex gap-3 items-center"
+                >
+                  <div className="w-14 h-14 shrink-0 rounded-sm overflow-hidden bg-blush/40 flex items-center justify-center">
+                    {product?.image ? (
+                      // eslint-disable-next-line @next/next/no-img-element
+                      <img src={product.image} alt="" className="w-full h-full object-cover" />
+                    ) : (
+                      <span className="font-body text-[9px] text-burgundy/30 text-center px-1">
+                        {product ? product.name : `Tile ${i + 1}`}
+                      </span>
+                    )}
+                  </div>
+                  <select
+                    value={selectedId}
+                    onChange={(e) => updateTile(i, e.target.value)}
+                    className="flex-1 rounded-sm border border-burgundy/15 px-2 py-2 font-body text-xs text-burgundy outline-none focus:border-gold focus:ring-1 focus:ring-gold transition-colors bg-white"
+                  >
+                    <option value="">— None —</option>
+                    {products.map((p) => (
+                      <option key={p.id} value={p.id}>
+                        {p.name}
+                      </option>
+                    ))}
+                  </select>
+                </div>
+              );
+            })}
           </div>
         </div>
         <PreviewPane>
-          <Hero {...data} />
+          <Hero {...data} products={products} />
         </PreviewPane>
       </div>
     </div>

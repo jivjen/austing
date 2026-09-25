@@ -16,6 +16,7 @@ export default function NewArrivalsPage() {
     category: productCategoryName(content, p),
     price: p.price,
     imageUrl: p.image || undefined,
+    slug: p.slug,
   }));
 
   return (

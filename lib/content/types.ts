@@ -17,7 +17,7 @@ export interface HeroContent {
   tagline: string;
   ctaLabel: string;
   ctaHref: string;
-  images: string[];
+  featuredProductIds: string[];
 }
 
 export interface BrandStoryFeature {

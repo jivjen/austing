@@ -17,6 +17,13 @@ const placeholderColors = [
   "bg-[#9a6d80]",
 ];
 
+interface FeaturedProduct {
+  id: string;
+  name: string;
+  slug: string;
+  image: string;
+}
+
 export interface HeroProps {
   heading?: string;
   subtitle?: string;
@@ -24,7 +31,8 @@ export interface HeroProps {
   tagline?: string;
   ctaLabel?: string;
   ctaHref?: string;
-  images?: string[];
+  featuredProductIds?: string[];
+  products?: FeaturedProduct[];
 }
 
 export default function Hero({
@@ -34,7 +42,8 @@ export default function Hero({
   tagline = "Bringing your vision to life",
   ctaLabel = "Explore Collections",
   ctaHref = "/collections",
-  images = [],
+  featuredProductIds = [],
+  products = [],
 }: HeroProps) {
   return (
     <section className="relative min-h-screen bg-burgundy text-white overflow-hidden">
@@ -97,14 +106,31 @@ export default function Hero({
           transition={{ duration: 0.8, delay: 0.9 }}
         >
           {placeholderColors.map((color, i) => {
-            const src = images[i];
+            const product = products.find((p) => p.id === featuredProductIds[i]);
+
+            if (!product) {
+              return <div key={i} className={`col-span-1 h-48 rounded-sm overflow-hidden ${color}`} />;
+            }
+
             return (
-              <div key={i} className={`col-span-1 h-48 rounded-sm overflow-hidden ${src ? "" : color}`}>
-                {src && (
+              <Link
+                key={i}
+                href={`/products/${product.slug}`}
+                className={`group col-span-1 h-48 rounded-sm overflow-hidden relative block ${product.image ? "" : color}`}
+              >
+                {product.image ? (
                   // eslint-disable-next-line @next/next/no-img-element
-                  <img src={src} alt="" className="w-full h-full object-cover" />
+                  <img
+                    src={product.image}
+                    alt={product.name}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                ) : (
+                  <span className="absolute inset-0 flex items-center justify-center font-body text-xs text-white/70 text-center px-2">
+                    {product.name}
+                  </span>
                 )}
-              </div>
+              </Link>
             );
           })}
         </motion.div>

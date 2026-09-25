@@ -32,6 +32,7 @@ export default async function CategoryPage({
     category: category.name,
     price: p.price,
     imageUrl: p.image || undefined,
+    slug: p.slug,
   }));
 
   return (
