@@ -143,6 +143,15 @@
   ],
   "products": [
     {
+      "name": "Classic Double Hoop Earrings",
+      "slug": "classic-double-hoop-earrings",
+      "price": 299,
+      "image": "/uploads/products/gemini-generated-image-8o4wdf8o4wdf8o4w-1790331346246.jpg",
+      "categoryId": "cat-03",
+      "description": "",
+      "id": "prod-71"
+    },
+    {
       "name": "Floral Charm Bracelet",
       "slug": "floral-charm-bracelet",
       "price": 299,
