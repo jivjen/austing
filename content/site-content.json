@@ -152,15 +152,6 @@
       "id": "prod-29"
     },
     {
-      "name": "RACE TEST B",
-      "slug": "race-test-b",
-      "price": 2,
-      "image": "",
-      "categoryId": "cat-01",
-      "description": "",
-      "id": "prod-28"
-    },
-    {
       "id": "prod-26",
       "name": "Butterfly Grace Pendant",
       "slug": "butterfly-grace-pendant",
