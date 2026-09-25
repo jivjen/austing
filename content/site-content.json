@@ -143,6 +143,15 @@
   ],
   "products": [
     {
+      "name": "Bow Drop Earrings",
+      "slug": "bow-drop-earrings",
+      "price": 299,
+      "image": "/uploads/products/gemini-generated-image-p5gee2p5gee2p5ge-1790332037338.jpg",
+      "categoryId": "cat-03",
+      "description": "",
+      "id": "prod-87"
+    },
+    {
       "name": "Bow Stud Earrings",
       "slug": "bow-stud-earrings",
       "price": 299,
