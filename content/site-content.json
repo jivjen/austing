@@ -143,6 +143,15 @@
   ],
   "products": [
     {
+      "name": "FRESH TAB TEST PRODUCT",
+      "slug": "fresh-tab-test-product",
+      "price": 0,
+      "image": "",
+      "categoryId": "cat-01",
+      "description": "",
+      "id": "prod-30"
+    },
+    {
       "id": "prod-29",
       "name": "Ruby Grace Pendant",
       "slug": "ruby-grace-pendant",
