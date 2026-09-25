@@ -144,10 +144,10 @@
   "products": [
     {
       "id": "prod-17",
-      "name": "Solara Bloom Pendant",
-      "slug": "solara-bloom-pendant",
+      "name": "Enchanted Fleur Pendant",
+      "slug": "enchanted-fleur-pendant",
       "price": 249,
-      "image": "/uploads/products/gemini-generated-image-dx8yvddx8yvddx8y-1790318197214.jpg",
+      "image": "/uploads/products/gemini-generated-image-g0lrl3g0lrl3g0lr-1790318235634.jpg",
       "categoryId": "cat-01",
       "description": ""
     },
