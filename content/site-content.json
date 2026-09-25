@@ -143,6 +143,15 @@
   ],
   "products": [
     {
+      "name": "RACE TEST B",
+      "slug": "race-test-b",
+      "price": 2,
+      "image": "",
+      "categoryId": "cat-01",
+      "description": "",
+      "id": "prod-28"
+    },
+    {
       "name": "RACE TEST A",
       "slug": "race-test-a",
       "price": 1,
