@@ -179,6 +179,15 @@
       "description": "A striking pendant where sun meets moon — half gold, half silver with a black diamond center"
     },
     {
+      "id": "prod-03",
+      "name": "Luna Crescent Earrings",
+      "slug": "luna-crescent-earrings",
+      "price": 650,
+      "image": "",
+      "categoryId": "cat-02",
+      "description": "Delicate crescent moon earrings with pavé diamonds that catch light like moonbeams"
+    },
+    {
       "id": "prod-04",
       "name": "Starfall Drop Earrings",
       "slug": "starfall-drop-earrings",
@@ -222,15 +231,6 @@
       "image": "/uploads/products/teardrop-gem-earrings-prod-08.jpg",
       "categoryId": "cat-03",
       "description": "Elegant teardrop earrings with your choice of precious stone in a gold filigree setting"
-    },
-    {
-      "id": "prod-09",
-      "name": "Graceful Bow Pendant",
-      "slug": "graceful-bow-pendant",
-      "price": 499,
-      "image": "/uploads/products/graceful-bow-pendant-prod-09.jpg",
-      "categoryId": "cat-01",
-      "description": ""
     },
     {
       "id": "prod-10",
