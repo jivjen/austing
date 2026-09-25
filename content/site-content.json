@@ -143,6 +143,15 @@
   ],
   "products": [
     {
+      "name": "Celestial Starfish Earring",
+      "slug": "celestial-starfish-earring",
+      "price": 299,
+      "image": "/uploads/products/gemini-generated-image-f4lya3f4lya3f4ly-1790331663879.jpg",
+      "categoryId": "cat-03",
+      "description": "",
+      "id": "prod-77"
+    },
+    {
       "name": "Elegant Bow Earring",
       "slug": "elegant-bow-earring",
       "price": 299,
