@@ -143,11 +143,20 @@
   ],
   "products": [
     {
-      "id": "prod-21",
-      "name": "Pearl Fan Pendant",
-      "slug": "pearl-fan-pendant",
+      "id": "prod-22",
+      "name": "Royal Heart Pendant",
+      "slug": "royal-heart-pendant",
       "price": 249,
-      "image": "/uploads/products/gemini-generated-image-p4ibsmp4ibsmp4ib-1790318956412.jpg",
+      "image": "/uploads/products/gemini-generated-image-q0iagkq0iagkq0ia-1790318987584.jpg",
+      "categoryId": "cat-01",
+      "description": ""
+    },
+    {
+      "id": "prod-21",
+      "name": "Elegant Bloom Pendant",
+      "slug": "elegant-bloom-pendant",
+      "price": 249,
+      "image": "/uploads/products/gemini-generated-image-m67jlkm67jlkm67j-1790318888222.jpg",
       "categoryId": "cat-01",
       "description": ""
     },
