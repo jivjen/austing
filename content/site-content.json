@@ -143,6 +143,15 @@
   ],
   "products": [
     {
+      "name": "Bow Stud Earrings",
+      "slug": "bow-stud-earrings",
+      "price": 299,
+      "image": "/uploads/products/gemini-generated-image-o57r4bo57r4bo57r-1790332004045.jpg",
+      "categoryId": "cat-03",
+      "description": "",
+      "id": "prod-86"
+    },
+    {
       "name": "Diamond Geometric Bracelet",
       "slug": "diamond-geometric-bracelet",
       "price": 299,
