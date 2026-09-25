@@ -143,11 +143,20 @@
   ],
   "products": [
     {
-      "id": "prod-13",
-      "name": "Divine Radiance Pendant",
-      "slug": "divine-radiance-pendant",
+      "id": "prod-14",
+      "name": "Emerald Reverie Pendan",
+      "slug": "emerald-reverie-pendan",
       "price": 249,
-      "image": "/uploads/products/gemini-generated-image-7mu6np7mu6np7mu6-1790317671568.jpg",
+      "image": "/uploads/products/gemini-generated-image-26vzyc26vzyc26vz-1790317833694.jpg",
+      "categoryId": "cat-01",
+      "description": ""
+    },
+    {
+      "id": "prod-13",
+      "name": "Graceful Muse Pendant",
+      "slug": "graceful-muse-pendant",
+      "price": 249,
+      "image": "/uploads/products/gemini-generated-image-5lquae5lquae5lqu-1790317573772.jpg",
       "categoryId": "cat-01",
       "description": ""
     },
@@ -168,6 +177,15 @@
       "image": "/uploads/products/gemini-generated-image-1mpz6w1mpz6w1mpz-1790316826645.jpg",
       "categoryId": "cat-01",
       "description": ""
+    },
+    {
+      "id": "prod-02",
+      "name": "Eclipse Pendant",
+      "slug": "eclipse-pendant",
+      "price": 720,
+      "image": "/uploads/products/eclipse-pendant-prod-02.jpg",
+      "categoryId": "cat-02",
+      "description": "A striking pendant where sun meets moon — half gold, half silver with a black diamond center"
     },
     {
       "id": "prod-03",
@@ -215,13 +233,13 @@
       "description": "A sleek gold bangle adorned with tiny star engravings and a single moonstone accent"
     },
     {
-      "id": "prod-09",
-      "name": "Graceful Bow Pendant",
-      "slug": "graceful-bow-pendant",
-      "price": 499,
-      "image": "/uploads/products/graceful-bow-pendant-prod-09.jpg",
-      "categoryId": "cat-01",
-      "description": ""
+      "id": "prod-08",
+      "name": "Teardrop Gem Earrings",
+      "slug": "teardrop-gem-earrings",
+      "price": 699,
+      "image": "/uploads/products/teardrop-gem-earrings-prod-08.jpg",
+      "categoryId": "cat-03",
+      "description": "Elegant teardrop earrings with your choice of precious stone in a gold filigree setting"
     },
     {
       "id": "prod-10",
