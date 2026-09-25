@@ -144,10 +144,10 @@
   "products": [
     {
       "id": "prod-23",
-      "name": "Crystal Teardrop Pendant",
-      "slug": "crystal-teardrop-pendant",
+      "name": "Radiant Cross Pendant",
+      "slug": "radiant-cross-pendant",
       "price": 249,
-      "image": "/uploads/products/gemini-generated-image-rjx9w7rjx9w7rjx9-1790319110509.jpg",
+      "image": "/uploads/products/gemini-generated-image-rl4rwsrl4rwsrl4r-1790319137741.jpg",
       "categoryId": "cat-01",
       "description": ""
     },
