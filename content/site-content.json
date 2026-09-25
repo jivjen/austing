@@ -197,15 +197,6 @@
       "description": "Your choice of gem set in a floating heart design — customize with ruby, sapphire, or emerald"
     },
     {
-      "id": "prod-07",
-      "name": "Celestial Bangle",
-      "slug": "celestial-bangle",
-      "price": 500,
-      "image": "",
-      "categoryId": "cat-02",
-      "description": "A sleek gold bangle adorned with tiny star engravings and a single moonstone accent"
-    },
-    {
       "id": "prod-08",
       "name": "Teardrop Gem Earrings",
       "slug": "teardrop-gem-earrings",
