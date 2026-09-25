@@ -144,10 +144,10 @@
   "products": [
     {
       "id": "prod-25",
-      "name": "Pearl Essence Pendant",
-      "slug": "pearl-essence-pendant",
+      "name": "Emerald Halo Pendant",
+      "slug": "emerald-halo-pendant",
       "price": 249,
-      "image": "/uploads/products/gemini-generated-image-wyn14cwyn14cwyn1-1790319690458.jpg",
+      "image": "",
       "categoryId": "cat-01",
       "description": ""
     },
