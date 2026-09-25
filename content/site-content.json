@@ -143,6 +143,15 @@
   ],
   "products": [
     {
+      "name": "Celestial Curve Earrings",
+      "slug": "celestial-curve-earrings",
+      "price": 299,
+      "image": "/uploads/products/gemini-generated-image-3pcob53pcob53pco-1790331180302.jpg",
+      "categoryId": "cat-03",
+      "description": "",
+      "id": "prod-67"
+    },
+    {
       "name": "Luxe Link Bracelet",
       "slug": "luxe-link-bracelet",
       "price": 299,
