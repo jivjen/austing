@@ -143,6 +143,15 @@
   ],
   "products": [
     {
+      "name": "Elegant Bow Earrings",
+      "slug": "elegant-bow-earrings",
+      "price": 299,
+      "image": "/uploads/products/gemini-generated-image-bnso9abnso9abnso-1790331463446.jpg",
+      "categoryId": "cat-03",
+      "description": "",
+      "id": "prod-75"
+    },
+    {
       "name": "Petal Bloom Earrings",
       "slug": "petal-bloom-earrings",
       "price": 299,
