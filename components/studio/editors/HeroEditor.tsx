@@ -88,14 +88,14 @@ export default function HeroEditor({
             Pick a product for any of these 6 tiles — it shows that product&apos;s photo and links
             straight to it. Leave any blank for a plain color block instead.
           </p>
-          <div className="grid grid-cols-2 gap-3 mb-6">
+          <div className="grid grid-cols-1 gap-3 mb-6">
             {Array.from({ length: HERO_TILE_SLOTS }).map((_, i) => {
               const selectedId = data.featuredProductIds[i] ?? "";
               const product = products.find((p) => p.id === selectedId);
               return (
                 <div
                   key={i}
-                  className="bg-white border border-burgundy/10 rounded-sm p-3 flex gap-3 items-center"
+                  className="min-w-0 bg-white border border-burgundy/10 rounded-sm p-3 flex gap-3 items-center"
                 >
                   <div className="w-14 h-14 shrink-0 rounded-sm overflow-hidden bg-blush/40 flex items-center justify-center">
                     {product?.image ? (
@@ -110,7 +110,7 @@ export default function HeroEditor({
                   <select
                     value={selectedId}
                     onChange={(e) => updateTile(i, e.target.value)}
-                    className="flex-1 rounded-sm border border-burgundy/15 px-2 py-2 font-body text-xs text-burgundy outline-none focus:border-gold focus:ring-1 focus:ring-gold transition-colors bg-white"
+                    className="w-full min-w-0 flex-1 rounded-sm border border-burgundy/15 px-2 py-2 font-body text-xs text-burgundy outline-none focus:border-gold focus:ring-1 focus:ring-gold transition-colors bg-white"
                   >
                     <option value="">— None —</option>
                     {products.map((p) => (

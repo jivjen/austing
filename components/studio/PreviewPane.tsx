@@ -6,12 +6,12 @@ export default function PreviewPane({
   label?: string;
 }) {
   return (
-    <div className="lg:sticky lg:top-28 self-start">
+    <div className="flex-1 min-w-0 lg:sticky lg:top-28 self-start">
       <p className="font-body text-[11px] tracking-[0.2em] uppercase text-burgundy/40 mb-3">
         {label}
       </p>
       <div
-        className="rounded-md overflow-hidden border border-burgundy/10 shadow-sm max-h-[calc(100vh-180px)] overflow-y-auto"
+        className="w-full rounded-md overflow-hidden border border-burgundy/10 shadow-sm max-h-[calc(100vh-180px)] overflow-y-auto"
         style={{ transform: "translateZ(0)" }}
       >
         {children}
