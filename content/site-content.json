@@ -143,6 +143,15 @@
   ],
   "products": [
     {
+      "name": "Pearl Starfish Earrings",
+      "slug": "pearl-starfish-earrings",
+      "price": 299,
+      "image": "/uploads/products/gemini-generated-image-ghqi44ghqi44ghqi-1790331724661.jpg",
+      "categoryId": "cat-03",
+      "description": "",
+      "id": "prod-79"
+    },
+    {
       "name": "Classic Hoop Earrings",
       "slug": "classic-hoop-earrings",
       "price": 299,
