@@ -143,6 +143,15 @@
   ],
   "products": [
     {
+      "name": "Luxe Link Bracelet",
+      "slug": "luxe-link-bracelet-2",
+      "price": 299,
+      "image": "/uploads/products/gemini-generated-image-a8kq4ha8kq4ha8kq-1790331374200.jpg",
+      "categoryId": "cat-05",
+      "description": "",
+      "id": "prod-72"
+    },
+    {
       "name": "Classic Double Hoop Earrings",
       "slug": "classic-double-hoop-earrings",
       "price": 299,
