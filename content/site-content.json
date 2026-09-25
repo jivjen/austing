@@ -143,6 +143,15 @@
   ],
   "products": [
     {
+      "name": "Organic Grace Earrings",
+      "slug": "organic-grace-earrings",
+      "price": 299,
+      "image": "/uploads/products/gemini-generated-image-aughkmaughkmaugh-1790331403335.jpg",
+      "categoryId": "cat-03",
+      "description": "",
+      "id": "prod-73"
+    },
+    {
       "name": "Luxe Link Bracelet",
       "slug": "luxe-link-bracelet-2",
       "price": 299,
