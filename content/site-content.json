@@ -143,6 +143,15 @@
   ],
   "products": [
     {
+      "name": "Diamond U-Link Bracelet",
+      "slug": "diamond-u-link-bracelet",
+      "price": 299,
+      "image": "/uploads/products/gemini-generated-image-kzyg8xkzyg8xkzyg-1790331899082.jpg",
+      "categoryId": "cat-05",
+      "description": "",
+      "id": "prod-83"
+    },
+    {
       "name": "Minimal Starfish Earrings",
       "slug": "minimal-starfish-earrings",
       "price": 299,
