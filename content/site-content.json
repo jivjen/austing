@@ -144,10 +144,10 @@
   "products": [
     {
       "id": "prod-25",
-      "name": "Elegant Cross Pendant",
-      "slug": "elegant-cross-pendant",
+      "name": "Butterfly Grace Pendant",
+      "slug": "butterfly-grace-pendant",
       "price": 249,
-      "image": "/uploads/products/gemini-generated-image-yqkgj2yqkgj2yqkg-1790319913386.jpg",
+      "image": "/uploads/products/gemini-generated-image-ysqa3eysqa3eysqa-1790319934623.jpg",
       "categoryId": "cat-01",
       "description": ""
     },
