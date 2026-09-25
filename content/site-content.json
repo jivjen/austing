@@ -144,10 +144,10 @@
   "products": [
     {
       "id": "prod-12",
-      "name": "Bloom Royale Pendant",
-      "slug": "bloom-royale-pendant",
+      "name": "Noir Pearl Pendant",
+      "slug": "noir-pearl-pendant",
       "price": 299,
-      "image": "/uploads/products/gemini-generated-image-4obs24obs24obs24-1790317272891.jpg",
+      "image": "/uploads/products/gemini-generated-image-5kanuw5kanuw5kan-1790317312144.jpg",
       "categoryId": "cat-01",
       "description": ""
     },
