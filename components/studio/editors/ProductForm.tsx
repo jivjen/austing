@@ -13,21 +13,9 @@ interface ProductFormProps {
   mode: "create" | "edit";
   product?: Product;
   categories: Category[];
-  allProducts: Product[];
 }
 
-function newId(existing: Product[]): string {
-  const ids = new Set(existing.map((p) => p.id));
-  let n = existing.length + 1;
-  let id = `prod-${String(n).padStart(2, "0")}`;
-  while (ids.has(id)) {
-    n++;
-    id = `prod-${String(n).padStart(2, "0")}`;
-  }
-  return id;
-}
-
-export default function ProductForm({ mode, product, categories, allProducts }: ProductFormProps) {
+export default function ProductForm({ mode, product, categories }: ProductFormProps) {
   const router = useRouter();
   const [name, setName] = useState(product?.name ?? "");
   const [slug, setSlug] = useState(product?.slug ?? "");
@@ -49,18 +37,18 @@ export default function ProductForm({ mode, product, categories, allProducts }: 
     [categories, categoryId]
   );
 
-  async function persist(nextProducts: Product[]) {
+  async function post(body: unknown) {
     setSaving(true);
     setError(null);
     try {
       const res = await fetch("/api/studio/content", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ section: "products", data: nextProducts }),
+        body: JSON.stringify(body),
       });
       if (!res.ok) {
-        const body = await res.json().catch(() => ({}));
-        throw new Error(body.error || "Save failed");
+        const resBody = await res.json().catch(() => ({}));
+        throw new Error(resBody.error || "Save failed");
       }
       router.push("/studio/products");
       router.refresh();
@@ -76,35 +64,27 @@ export default function ProductForm({ mode, product, categories, allProducts }: 
       setError("Name, slug and category are required");
       return;
     }
-    const finalSlug = slugify(slug);
-    const duplicate = allProducts.some((p) => p.slug === finalSlug && p.id !== product?.id);
-    if (duplicate) {
-      setError("Another product already uses this slug");
-      return;
-    }
 
-    const record: Product = {
-      id: product?.id ?? newId(allProducts),
+    const record = {
       name: name.trim(),
-      slug: finalSlug,
+      slug: slugify(slug),
       price: Number(price) || 0,
       image,
       categoryId,
       description,
     };
 
-    const nextProducts =
+    await post(
       mode === "create"
-        ? [record, ...allProducts]
-        : allProducts.map((p) => (p.id === record.id ? record : p));
-
-    await persist(nextProducts);
+        ? { section: "products", op: "create", record }
+        : { section: "products", op: "update", id: product!.id, record }
+    );
   }
 
   async function handleDelete() {
     if (!product) return;
     if (!window.confirm(`Delete "${product.name}"? This cannot be undone.`)) return;
-    await persist(allProducts.filter((p) => p.id !== product.id));
+    await post({ section: "products", op: "delete", id: product.id });
   }
 
   return (

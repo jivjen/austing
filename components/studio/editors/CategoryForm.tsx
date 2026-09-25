@@ -12,22 +12,10 @@ import type { Category, Product } from "@/lib/content/types";
 interface CategoryFormProps {
   mode: "create" | "edit";
   category?: Category;
-  allCategories: Category[];
   products: Product[];
 }
 
-function newId(existing: Category[]): string {
-  const ids = new Set(existing.map((c) => c.id));
-  let n = existing.length + 1;
-  let id = `cat-${String(n).padStart(2, "0")}`;
-  while (ids.has(id)) {
-    n++;
-    id = `cat-${String(n).padStart(2, "0")}`;
-  }
-  return id;
-}
-
-export default function CategoryForm({ mode, category, allCategories, products }: CategoryFormProps) {
+export default function CategoryForm({ mode, category, products }: CategoryFormProps) {
   const router = useRouter();
   const [name, setName] = useState(category?.name ?? "");
   const [slug, setSlug] = useState(category?.slug ?? "");
@@ -50,18 +38,18 @@ export default function CategoryForm({ mode, category, allCategories, products }
     if (!slugTouched) setSlug(slugify(value));
   }
 
-  async function persist(nextCategories: Category[]) {
+  async function post(body: unknown) {
     setSaving(true);
     setError(null);
     try {
       const res = await fetch("/api/studio/content", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ section: "categories", data: nextCategories }),
+        body: JSON.stringify(body),
       });
       if (!res.ok) {
-        const body = await res.json().catch(() => ({}));
-        throw new Error(body.error || "Save failed");
+        const resBody = await res.json().catch(() => ({}));
+        throw new Error(resBody.error || "Save failed");
       }
       router.push("/studio/categories");
       router.refresh();
@@ -77,17 +65,10 @@ export default function CategoryForm({ mode, category, allCategories, products }
       setError("Name and slug are required");
       return;
     }
-    const finalSlug = slugify(slug);
-    const duplicate = allCategories.some((c) => c.slug === finalSlug && c.id !== category?.id);
-    if (duplicate) {
-      setError("Another category already uses this slug");
-      return;
-    }
 
-    const record: Category = {
-      id: category?.id ?? newId(allCategories),
+    const record = {
       name: name.trim(),
-      slug: finalSlug,
+      slug: slugify(slug),
       description,
       image,
       featuredOnHomepage,
@@ -96,12 +77,11 @@ export default function CategoryForm({ mode, category, allCategories, products }
       columns,
     };
 
-    const nextCategories =
+    await post(
       mode === "create"
-        ? [...allCategories, record]
-        : allCategories.map((c) => (c.id === record.id ? record : c));
-
-    await persist(nextCategories);
+        ? { section: "categories", op: "create", record }
+        : { section: "categories", op: "update", id: category!.id, record }
+    );
   }
 
   async function handleDelete() {
@@ -113,7 +93,7 @@ export default function CategoryForm({ mode, category, allCategories, products }
       return;
     }
     if (!window.confirm(`Delete "${category.name}"? This cannot be undone.`)) return;
-    await persist(allCategories.filter((c) => c.id !== category.id));
+    await post({ section: "categories", op: "delete", id: category.id });
   }
 
   return (

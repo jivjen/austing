@@ -8,12 +8,5 @@ export default async function EditCategoryPage({ params }: { params: Promise<{ i
   const category = content.categories.find((c) => c.id === id);
   if (!category) notFound();
 
-  return (
-    <CategoryForm
-      mode="edit"
-      category={category}
-      allCategories={content.categories}
-      products={content.products}
-    />
-  );
+  return <CategoryForm mode="edit" category={category} products={content.products} />;
 }

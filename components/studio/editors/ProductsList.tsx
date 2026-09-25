@@ -36,10 +36,7 @@ export default function ProductsList({
       const res = await fetch("/api/studio/content", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          section: "products",
-          data: products.filter((p) => p.id !== product.id),
-        }),
+        body: JSON.stringify({ section: "products", op: "delete", id: product.id }),
       });
       if (!res.ok) {
         const body = await res.json().catch(() => ({}));

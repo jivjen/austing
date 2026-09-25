@@ -34,10 +34,7 @@ export default function CategoriesList({
       const res = await fetch("/api/studio/content", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          section: "categories",
-          data: categories.filter((c) => c.id !== category.id),
-        }),
+        body: JSON.stringify({ section: "categories", op: "delete", id: category.id }),
       });
       if (!res.ok) {
         const body = await res.json().catch(() => ({}));

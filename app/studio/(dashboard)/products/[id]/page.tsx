@@ -8,12 +8,5 @@ export default async function EditProductPage({ params }: { params: Promise<{ id
   const product = content.products.find((p) => p.id === id);
   if (!product) notFound();
 
-  return (
-    <ProductForm
-      mode="edit"
-      product={product}
-      categories={content.categories}
-      allProducts={content.products}
-    />
-  );
+  return <ProductForm mode="edit" product={product} categories={content.categories} />;
 }
