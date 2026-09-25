@@ -143,15 +143,6 @@
   ],
   "products": [
     {
-      "name": "__temp__",
-      "slug": "temp",
-      "price": 0,
-      "image": "",
-      "categoryId": "cat-01",
-      "description": "",
-      "id": "prod-29"
-    },
-    {
       "id": "prod-26",
       "name": "Butterfly Grace Pendant",
       "slug": "butterfly-grace-pendant",
