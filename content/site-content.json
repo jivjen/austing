@@ -179,15 +179,6 @@
       "description": "Cascading star-shaped drops in polished gold with delicate chain links"
     },
     {
-      "id": "prod-05",
-      "name": "Solstice Ring",
-      "slug": "solstice-ring",
-      "price": 475,
-      "image": "",
-      "categoryId": "cat-02",
-      "description": "An elegant band featuring intertwined sun and moon motifs in brushed gold"
-    },
-    {
       "id": "prod-08",
       "name": "Teardrop Gem Earrings",
       "slug": "teardrop-gem-earrings",
