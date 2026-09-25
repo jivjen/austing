@@ -144,10 +144,10 @@
   "products": [
     {
       "id": "prod-25",
-      "name": "Butterfly Grace Pendant",
-      "slug": "butterfly-grace-pendant",
+      "name": "Floral Charm Pendant",
+      "slug": "floral-charm-pendant",
       "price": 249,
-      "image": "/uploads/products/gemini-generated-image-ysqa3eysqa3eysqa-1790319934623.jpg",
+      "image": "/uploads/products/gemini-generated-image-yza2dbyza2dbyza2-1790319955808.jpg",
       "categoryId": "cat-01",
       "description": ""
     },
