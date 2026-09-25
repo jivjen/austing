@@ -144,11 +144,11 @@
   "products": [
     {
       "id": "prod-25",
-      "name": "Regal Link Bracelet",
-      "slug": "regal-link-bracelet",
+      "name": "Graceful Bee Earrings",
+      "slug": "graceful-bee-earrings",
       "price": 299,
-      "image": "/uploads/products/gemini-generated-image-uqfcp4uqfcp4uqfc-1790321126047.jpg",
-      "categoryId": "cat-05",
+      "image": "/uploads/products/gemini-generated-image-w0givmw0givmw0gi-1790321159551.jpg",
+      "categoryId": "cat-03",
       "description": ""
     },
     {
