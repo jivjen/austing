@@ -144,10 +144,10 @@
   "products": [
     {
       "id": "prod-25",
-      "name": "Emerald Halo Pendant",
-      "slug": "emerald-halo-pendant",
+      "name": "Classic Horseshoe Pendant",
+      "slug": "classic-horseshoe-pendant",
       "price": 249,
-      "image": "",
+      "image": "/uploads/products/gemini-generated-image-xk1pmhxk1pmhxk1p-1790319737297.jpg",
       "categoryId": "cat-01",
       "description": ""
     },
