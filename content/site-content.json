@@ -143,6 +143,15 @@
   ],
   "products": [
     {
+      "name": "Radiant Heart Bracelet",
+      "slug": "radiant-heart-bracelet",
+      "price": 299,
+      "image": "/uploads/products/gemini-generated-image-4amvh84amvh84amv-1790331209154.jpg",
+      "categoryId": "cat-05",
+      "description": "",
+      "id": "prod-68"
+    },
+    {
       "name": "Celestial Curve Earrings",
       "slug": "celestial-curve-earrings",
       "price": 299,
