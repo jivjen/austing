@@ -144,10 +144,10 @@
   "products": [
     {
       "id": "prod-21",
-      "name": "Elegant Bloom Pendant",
-      "slug": "elegant-bloom-pendant",
+      "name": "Rosé Charm Pendant",
+      "slug": "ros-charm-pendant",
       "price": 249,
-      "image": "/uploads/products/gemini-generated-image-m67jlkm67jlkm67j-1790318888222.jpg",
+      "image": "/uploads/products/gemini-generated-image-ole0niole0niole0-1790318926236.jpg",
       "categoryId": "cat-01",
       "description": ""
     },
