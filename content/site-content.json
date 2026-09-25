@@ -386,15 +386,6 @@
       "description": "Cascading star-shaped drops in polished gold with delicate chain links"
     },
     {
-      "id": "prod-09",
-      "name": "Graceful Bow Pendant",
-      "slug": "graceful-bow-pendant",
-      "price": 499,
-      "image": "/uploads/products/graceful-bow-pendant-prod-09.jpg",
-      "categoryId": "cat-01",
-      "description": ""
-    },
-    {
       "id": "prod-10",
       "name": "Double Halo Hoop Earrings",
       "slug": "double-halo-hoop-earrings",
