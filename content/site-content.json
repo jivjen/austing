@@ -143,6 +143,15 @@
   ],
   "products": [
     {
+      "name": "__temp__",
+      "slug": "temp",
+      "price": 0,
+      "image": "",
+      "categoryId": "cat-01",
+      "description": "",
+      "id": "prod-29"
+    },
+    {
       "name": "RACE TEST B",
       "slug": "race-test-b",
       "price": 2,
