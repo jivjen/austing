@@ -143,6 +143,15 @@
   ],
   "products": [
     {
+      "name": "Sculpted Teardrop Earrings",
+      "slug": "sculpted-teardrop-earrings",
+      "price": 299,
+      "image": "/uploads/products/gemini-generated-image-1ldgp31ldgp31ldg-1790331113458.jpg",
+      "categoryId": "cat-03",
+      "description": "",
+      "id": "prod-65"
+    },
+    {
       "id": "prod-02",
       "name": "Eclipse Pendant",
       "slug": "eclipse-pendant",
