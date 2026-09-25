@@ -143,6 +143,15 @@
   ],
   "products": [
     {
+      "id": "prod-11",
+      "name": "Bow Pendant",
+      "slug": "bow-pendant",
+      "price": 299,
+      "image": "/uploads/products/gemini-generated-image-1mpz6w1mpz6w1mpz-1790316826645.jpg",
+      "categoryId": "cat-01",
+      "description": ""
+    },
+    {
       "id": "prod-01",
       "name": "Radiant Sun Pendant",
       "slug": "radiant-sun-pendant",
@@ -165,7 +174,7 @@
       "name": "Luna Crescent Earrings",
       "slug": "luna-crescent-earrings",
       "price": 650,
-      "image": "/uploads/products/gemini-generated-image-gfr0bcgfr0bcgfr0-1790316704080.jpg",
+      "image": "",
       "categoryId": "cat-02",
       "description": "Delicate crescent moon earrings with pavé diamonds that catch light like moonbeams"
     },
