@@ -197,13 +197,13 @@
       "description": "Cascading star-shaped drops in polished gold with delicate chain links"
     },
     {
-      "id": "prod-05",
-      "name": "Solstice Ring",
-      "slug": "solstice-ring",
-      "price": 475,
+      "id": "prod-06",
+      "name": "Floating Heart Earrings",
+      "slug": "floating-heart-earrings",
+      "price": 499,
       "image": "",
-      "categoryId": "cat-02",
-      "description": "An elegant band featuring intertwined sun and moon motifs in brushed gold"
+      "categoryId": "cat-03",
+      "description": "Your choice of gem set in a floating heart design — customize with ruby, sapphire, or emerald"
     },
     {
       "id": "prod-07",
