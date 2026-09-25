@@ -143,6 +143,15 @@
   ],
   "products": [
     {
+      "id": "prod-13",
+      "name": "Graceful Muse Pendant",
+      "slug": "graceful-muse-pendant",
+      "price": 249,
+      "image": "/uploads/products/gemini-generated-image-5lquae5lquae5lqu-1790317573772.jpg",
+      "categoryId": "cat-01",
+      "description": ""
+    },
+    {
       "id": "prod-12",
       "name": "Noir Pearl Pendant",
       "slug": "noir-pearl-pendant",
@@ -159,6 +168,15 @@
       "image": "/uploads/products/gemini-generated-image-1mpz6w1mpz6w1mpz-1790316826645.jpg",
       "categoryId": "cat-01",
       "description": ""
+    },
+    {
+      "id": "prod-02",
+      "name": "Eclipse Pendant",
+      "slug": "eclipse-pendant",
+      "price": 720,
+      "image": "/uploads/products/eclipse-pendant-prod-02.jpg",
+      "categoryId": "cat-02",
+      "description": "A striking pendant where sun meets moon — half gold, half silver with a black diamond center"
     },
     {
       "id": "prod-03",
