@@ -144,64 +144,64 @@
   "products": [
     {
       "id": "prod-19",
-      "name": "Roselle Bow Pendan",
-      "slug": "roselle-bow-pendan",
+      "name": "Luméa Heart Pendant",
+      "slug": "lum-a-heart-pendant",
       "price": 249,
-      "image": "/uploads/products/gemini-generated-image-jkbt9ejkbt9ejkbt-1790318559778.jpg",
+      "image": "/uploads/products/gemini-generated-image-kossy4kossy4koss-1790318609193.jpg",
       "categoryId": "cat-01",
       "description": ""
     },
     {
       "id": "prod-18",
-      "name": "Amoura Heart Pendant",
-      "slug": "amoura-heart-pendant",
+      "name": "Celestia Link Pendant",
+      "slug": "celestia-link-pendant",
       "price": 249,
-      "image": "/uploads/products/gemini-generated-image-gkuq7ogkuq7ogkuq-1790318297246.jpg",
+      "image": "/uploads/products/gemini-generated-image-i7qvdii7qvdii7qv-1790318484860.jpg",
       "categoryId": "cat-01",
       "description": ""
     },
     {
       "id": "prod-17",
-      "name": "Solara Bloom Pendant",
-      "slug": "solara-bloom-pendant",
+      "name": "Aurelia Teardrop Pendant",
+      "slug": "aurelia-teardrop-pendant",
       "price": 249,
-      "image": "/uploads/products/gemini-generated-image-dx8yvddx8yvddx8y-1790318197214.jpg",
+      "image": "/uploads/products/gemini-generated-image-g33pv7g33pv7g33p-1790318265342.jpg",
       "categoryId": "cat-01",
       "description": ""
     },
     {
       "id": "prod-16",
-      "name": "Eternal Heart Pendant",
-      "slug": "eternal-heart-pendant",
+      "name": "Celestia Cross Pendant",
+      "slug": "celestia-cross-pendant",
       "price": 249,
-      "image": "/uploads/products/gemini-generated-image-cupljucupljucupl-1790318104529.jpg",
+      "image": "/uploads/products/gemini-generated-image-d2d4nkd2d4nkd2d4-1790318167074.jpg",
       "categoryId": "cat-01",
       "description": ""
     },
     {
       "id": "prod-15",
-      "name": "Pearl Élan Pendant",
-      "slug": "pearl-lan-pendant",
+      "name": "Celestial Bloom Pendant",
+      "slug": "celestial-bloom-pendant",
       "price": 249,
-      "image": "/uploads/products/gemini-generated-image-adt7djadt7djadt7-1790317984233.jpg",
+      "image": "/uploads/products/gemini-generated-image-cbgmyjcbgmyjcbgm-1790318041540.jpg",
       "categoryId": "cat-01",
       "description": ""
     },
     {
       "id": "prod-14",
-      "name": "Emerald Reverie Pendan",
-      "slug": "emerald-reverie-pendan",
+      "name": "Eternal Embrace Pendant",
+      "slug": "eternal-embrace-pendant",
       "price": 249,
-      "image": "/uploads/products/gemini-generated-image-26vzyc26vzyc26vz-1790317833694.jpg",
+      "image": "/uploads/products/gemini-generated-image-a4zd55a4zd55a4zd-1790317896047.jpg",
       "categoryId": "cat-01",
       "description": ""
     },
     {
       "id": "prod-13",
-      "name": "Graceful Muse Pendant",
-      "slug": "graceful-muse-pendant",
+      "name": "Divine Radiance Pendant",
+      "slug": "divine-radiance-pendant",
       "price": 249,
-      "image": "/uploads/products/gemini-generated-image-5lquae5lquae5lqu-1790317573772.jpg",
+      "image": "/uploads/products/gemini-generated-image-7mu6np7mu6np7mu6-1790317671568.jpg",
       "categoryId": "cat-01",
       "description": ""
     },
@@ -222,15 +222,6 @@
       "image": "/uploads/products/gemini-generated-image-1mpz6w1mpz6w1mpz-1790316826645.jpg",
       "categoryId": "cat-01",
       "description": ""
-    },
-    {
-      "id": "prod-02",
-      "name": "Eclipse Pendant",
-      "slug": "eclipse-pendant",
-      "price": 720,
-      "image": "/uploads/products/eclipse-pendant-prod-02.jpg",
-      "categoryId": "cat-02",
-      "description": "A striking pendant where sun meets moon — half gold, half silver with a black diamond center"
     },
     {
       "id": "prod-03",
@@ -278,13 +269,13 @@
       "description": "A sleek gold bangle adorned with tiny star engravings and a single moonstone accent"
     },
     {
-      "id": "prod-08",
-      "name": "Teardrop Gem Earrings",
-      "slug": "teardrop-gem-earrings",
-      "price": 699,
-      "image": "/uploads/products/teardrop-gem-earrings-prod-08.jpg",
-      "categoryId": "cat-03",
-      "description": "Elegant teardrop earrings with your choice of precious stone in a gold filigree setting"
+      "id": "prod-09",
+      "name": "Graceful Bow Pendant",
+      "slug": "graceful-bow-pendant",
+      "price": 499,
+      "image": "/uploads/products/graceful-bow-pendant-prod-09.jpg",
+      "categoryId": "cat-01",
+      "description": ""
     },
     {
       "id": "prod-10",
