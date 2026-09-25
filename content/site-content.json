@@ -143,6 +143,15 @@
   ],
   "products": [
     {
+      "name": "Infinity Love Bracelet",
+      "slug": "infinity-love-bracelet",
+      "price": 299,
+      "image": "/uploads/products/gemini-generated-image-hbzprghbzprghbzp-1790331779161.jpg",
+      "categoryId": "cat-05",
+      "description": "",
+      "id": "prod-81"
+    },
+    {
       "name": "Sculpted Wave Earrings",
       "slug": "sculpted-wave-earrings",
       "price": 0,
