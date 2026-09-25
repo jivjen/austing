@@ -143,6 +143,15 @@
   ],
   "products": [
     {
+      "id": "prod-21",
+      "name": "Golden Drop Pendant",
+      "slug": "golden-drop-pendant",
+      "price": 249,
+      "image": "/uploads/products/gemini-generated-image-lgqyralgqyralgqy-1790318858142.jpg",
+      "categoryId": "cat-01",
+      "description": ""
+    },
+    {
       "id": "prod-20",
       "name": "Perla Grace Pendant",
       "slug": "perla-grace-pendant",
