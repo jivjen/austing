@@ -161,13 +161,13 @@
       "description": ""
     },
     {
-      "id": "prod-02",
-      "name": "Eclipse Pendant",
-      "slug": "eclipse-pendant",
-      "price": 720,
-      "image": "/uploads/products/eclipse-pendant-prod-02.jpg",
+      "id": "prod-03",
+      "name": "Luna Crescent Earrings",
+      "slug": "luna-crescent-earrings",
+      "price": 650,
+      "image": "",
       "categoryId": "cat-02",
-      "description": "A striking pendant where sun meets moon — half gold, half silver with a black diamond center"
+      "description": "Delicate crescent moon earrings with pavé diamonds that catch light like moonbeams"
     },
     {
       "id": "prod-04",
