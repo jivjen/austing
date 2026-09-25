@@ -143,6 +143,15 @@
   ],
   "products": [
     {
+      "name": "Petal Bloom Earrings",
+      "slug": "petal-bloom-earrings",
+      "price": 299,
+      "image": "/uploads/products/gemini-generated-image-bnso9abnso9abnso-1790331433543.jpg",
+      "categoryId": "cat-03",
+      "description": "",
+      "id": "prod-74"
+    },
+    {
       "name": "Organic Grace Earrings",
       "slug": "organic-grace-earrings",
       "price": 299,
