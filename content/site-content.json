@@ -143,6 +143,15 @@
   ],
   "products": [
     {
+      "name": "Textured V-Hoop Earrings",
+      "slug": "textured-v-hoop-earrings",
+      "price": 299,
+      "image": "/uploads/products/gemini-generated-image-samhv7samhv7samh-1790332070444.jpg",
+      "categoryId": "cat-03",
+      "description": "",
+      "id": "prod-88"
+    },
+    {
       "name": "Bow Drop Earrings",
       "slug": "bow-drop-earrings",
       "price": 299,
