@@ -161,15 +161,6 @@
       "description": ""
     },
     {
-      "id": "prod-01",
-      "name": "Radiant Sun Pendant",
-      "slug": "radiant-sun-pendant",
-      "price": 550,
-      "image": "",
-      "categoryId": "cat-02",
-      "description": "A luminous gold pendant capturing the warmth of the sun, featuring hand-set citrine stones in a radial pattern"
-    },
-    {
       "id": "prod-02",
       "name": "Eclipse Pendant",
       "slug": "eclipse-pendant",
