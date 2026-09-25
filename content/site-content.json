@@ -143,6 +143,15 @@
   ],
   "products": [
     {
+      "name": "Floral Charm Bracelet",
+      "slug": "floral-charm-bracelet",
+      "price": 299,
+      "image": "/uploads/products/gemini-generated-image-6p3h2m6p3h2m6p3h-1790331316618.jpg",
+      "categoryId": "cat-05",
+      "description": "",
+      "id": "prod-70"
+    },
+    {
       "name": "Sunburst Bloom Earrings",
       "slug": "sunburst-bloom-earrings",
       "price": 299,
