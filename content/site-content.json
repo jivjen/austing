@@ -143,11 +143,20 @@
   ],
   "products": [
     {
-      "id": "prod-24",
-      "name": "Pearl Embrace Pendant",
-      "slug": "pearl-embrace-pendant",
+      "id": "prod-25",
+      "name": "Emerald Grace Pendant",
+      "slug": "emerald-grace-pendant",
       "price": 249,
-      "image": "/uploads/products/gemini-generated-image-vyooq1vyooq1vyoo-1790319643766.jpg",
+      "image": "/uploads/products/gemini-generated-image-wlec4qwlec4qwlec-1790319666164.jpg",
+      "categoryId": "cat-01",
+      "description": ""
+    },
+    {
+      "id": "prod-24",
+      "name": "Graceful Bloom Pendant",
+      "slug": "graceful-bloom-pendant",
+      "price": 249,
+      "image": "/uploads/products/gemini-generated-image-u4yz1pu4yz1pu4yz-1790319502149.jpg",
       "categoryId": "cat-01",
       "description": ""
     },
