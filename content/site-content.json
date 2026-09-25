@@ -144,10 +144,10 @@
   "products": [
     {
       "id": "prod-25",
-      "name": "Classic Cross Pendant",
-      "slug": "classic-cross-pendant",
+      "name": "Teardrop Halo Pendant",
+      "slug": "teardrop-halo-pendant",
       "price": 249,
-      "image": "/uploads/products/gemini-generated-image-xyqtn8xyqtn8xyqt-1790319831808.jpg",
+      "image": "/uploads/products/gemini-generated-image-ykslmgykslmgyksl-1790319871592.jpg",
       "categoryId": "cat-01",
       "description": ""
     },
