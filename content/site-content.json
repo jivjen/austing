@@ -143,175 +143,22 @@
   ],
   "products": [
     {
-      "name": "FRESH TAB TEST PRODUCT",
-      "slug": "fresh-tab-test-product",
-      "price": 0,
+      "id": "prod-01",
+      "name": "Radiant Sun Pendant",
+      "slug": "radiant-sun-pendant",
+      "price": 550,
       "image": "",
-      "categoryId": "cat-01",
-      "description": "",
-      "id": "prod-30"
+      "categoryId": "cat-02",
+      "description": "A luminous gold pendant capturing the warmth of the sun, featuring hand-set citrine stones in a radial pattern"
     },
     {
-      "id": "prod-29",
-      "name": "Ruby Grace Pendant",
-      "slug": "ruby-grace-pendant",
-      "price": 249,
-      "image": "/uploads/products/gemini-generated-image-xt91doxt91doxt91-1790327741790.jpg",
-      "categoryId": "cat-01",
-      "description": ""
-    },
-    {
-      "name": "RACE TEST B",
-      "slug": "race-test-b",
-      "price": 2,
-      "image": "",
-      "categoryId": "cat-01",
-      "description": "",
-      "id": "prod-28"
-    },
-    {
-      "id": "prod-26",
-      "name": "Butterfly Grace Pendant",
-      "slug": "butterfly-grace-pendant",
-      "price": 249,
-      "image": "/uploads/products/gemini-generated-image-ysqa3eysqa3eysqa-1790321661804.jpg",
-      "categoryId": "cat-01",
-      "description": ""
-    },
-    {
-      "id": "prod-25",
-      "name": "Floral Charm Pendant",
-      "slug": "floral-charm-pendant",
-      "price": 249,
-      "image": "/uploads/products/gemini-generated-image-yza2dbyza2dbyza2-1790319955808.jpg",
-      "categoryId": "cat-01",
-      "description": ""
-    },
-    {
-      "id": "prod-24",
-      "name": "Graceful Bloom Pendant",
-      "slug": "graceful-bloom-pendant",
-      "price": 249,
-      "image": "/uploads/products/gemini-generated-image-u4yz1pu4yz1pu4yz-1790319502149.jpg",
-      "categoryId": "cat-01",
-      "description": ""
-    },
-    {
-      "id": "prod-23",
-      "name": "Diamond Frame Pendant",
-      "slug": "diamond-frame-pendant",
-      "price": 249,
-      "image": "/uploads/products/gemini-generated-image-suuyh4suuyh4suuy-1790319399911.jpg",
-      "categoryId": "cat-01",
-      "description": ""
-    },
-    {
-      "id": "prod-22",
-      "name": "Royal Heart Pendant",
-      "slug": "royal-heart-pendant",
-      "price": 249,
-      "image": "/uploads/products/gemini-generated-image-q0iagkq0iagkq0ia-1790318987584.jpg",
-      "categoryId": "cat-01",
-      "description": ""
-    },
-    {
-      "id": "prod-21",
-      "name": "Elegant Bloom Pendant",
-      "slug": "elegant-bloom-pendant",
-      "price": 249,
-      "image": "/uploads/products/gemini-generated-image-m67jlkm67jlkm67j-1790318888222.jpg",
-      "categoryId": "cat-01",
-      "description": ""
-    },
-    {
-      "id": "prod-20",
-      "name": "Perla Grace Pendant",
-      "slug": "perla-grace-pendant",
-      "price": 249,
-      "image": "/uploads/products/gemini-generated-image-l4r364l4r364l4r3-1790318650631.jpg",
-      "categoryId": "cat-01",
-      "description": ""
-    },
-    {
-      "id": "prod-19",
-      "name": "Roselle Bow Pendan",
-      "slug": "roselle-bow-pendan",
-      "price": 249,
-      "image": "/uploads/products/gemini-generated-image-jkbt9ejkbt9ejkbt-1790318559778.jpg",
-      "categoryId": "cat-01",
-      "description": ""
-    },
-    {
-      "id": "prod-18",
-      "name": "Amoura Heart Pendant",
-      "slug": "amoura-heart-pendant",
-      "price": 249,
-      "image": "/uploads/products/gemini-generated-image-gkuq7ogkuq7ogkuq-1790318297246.jpg",
-      "categoryId": "cat-01",
-      "description": ""
-    },
-    {
-      "id": "prod-17",
-      "name": "Solara Bloom Pendant",
-      "slug": "solara-bloom-pendant",
-      "price": 249,
-      "image": "/uploads/products/gemini-generated-image-dx8yvddx8yvddx8y-1790318197214.jpg",
-      "categoryId": "cat-01",
-      "description": ""
-    },
-    {
-      "id": "prod-16",
-      "name": "Eternal Heart Pendant",
-      "slug": "eternal-heart-pendant",
-      "price": 249,
-      "image": "/uploads/products/gemini-generated-image-cupljucupljucupl-1790318104529.jpg",
-      "categoryId": "cat-01",
-      "description": ""
-    },
-    {
-      "id": "prod-15",
-      "name": "Pearl Élan Pendant",
-      "slug": "pearl-lan-pendant",
-      "price": 249,
-      "image": "/uploads/products/gemini-generated-image-adt7djadt7djadt7-1790317984233.jpg",
-      "categoryId": "cat-01",
-      "description": ""
-    },
-    {
-      "id": "prod-14",
-      "name": "Emerald Reverie Pendan",
-      "slug": "emerald-reverie-pendan",
-      "price": 249,
-      "image": "/uploads/products/gemini-generated-image-26vzyc26vzyc26vz-1790317833694.jpg",
-      "categoryId": "cat-01",
-      "description": ""
-    },
-    {
-      "id": "prod-13",
-      "name": "Graceful Muse Pendant",
-      "slug": "graceful-muse-pendant",
-      "price": 249,
-      "image": "/uploads/products/gemini-generated-image-5lquae5lquae5lqu-1790317573772.jpg",
-      "categoryId": "cat-01",
-      "description": ""
-    },
-    {
-      "id": "prod-12",
-      "name": "Noir Pearl Pendant",
-      "slug": "noir-pearl-pendant",
-      "price": 299,
-      "image": "/uploads/products/gemini-generated-image-5kanuw5kanuw5kan-1790317312144.jpg",
-      "categoryId": "cat-01",
-      "description": ""
-    },
-    {
-      "id": "prod-11",
-      "name": "Bow Pendant",
-      "slug": "bow-pendant",
-      "price": 299,
-      "image": "/uploads/products/gemini-generated-image-1mpz6w1mpz6w1mpz-1790316826645.jpg",
-      "categoryId": "cat-01",
-      "description": ""
+      "id": "prod-02",
+      "name": "Eclipse Pendant",
+      "slug": "eclipse-pendant",
+      "price": 720,
+      "image": "/uploads/products/eclipse-pendant-prod-02.jpg",
+      "categoryId": "cat-02",
+      "description": "A striking pendant where sun meets moon — half gold, half silver with a black diamond center"
     },
     {
       "id": "prod-03",
@@ -359,12 +206,516 @@
       "description": "A sleek gold bangle adorned with tiny star engravings and a single moonstone accent"
     },
     {
+      "id": "prod-08",
+      "name": "Teardrop Gem Earrings",
+      "slug": "teardrop-gem-earrings",
+      "price": 699,
+      "image": "/uploads/products/teardrop-gem-earrings-prod-08.jpg",
+      "categoryId": "cat-03",
+      "description": "Elegant teardrop earrings with your choice of precious stone in a gold filigree setting"
+    },
+    {
+      "id": "prod-09",
+      "name": "Graceful Bow Pendant",
+      "slug": "graceful-bow-pendant",
+      "price": 499,
+      "image": "/uploads/products/graceful-bow-pendant-prod-09.jpg",
+      "categoryId": "cat-01",
+      "description": ""
+    },
+    {
       "id": "prod-10",
       "name": "Double Halo Hoop Earrings",
       "slug": "double-halo-hoop-earrings",
       "price": 499,
       "image": "/uploads/products/double-halo-hoop-earrings-prod-10.jpg",
       "categoryId": "cat-03",
+      "description": ""
+    },
+    {
+      "id": "prod-11",
+      "name": "Ruby Grace Pendant",
+      "slug": "ruby-grace-pendant",
+      "price": 249,
+      "image": "/uploads/products/gemini-generated-image-xt91doxt91doxt91-1790327741790.jpg",
+      "categoryId": "cat-01",
+      "description": ""
+    },
+    {
+      "id": "prod-12",
+      "name": "Butterfly Grace Pendant",
+      "slug": "butterfly-grace-pendant",
+      "price": 249,
+      "image": "/uploads/products/gemini-generated-image-ysqa3eysqa3eysqa-1790321661804.jpg",
+      "categoryId": "cat-01",
+      "description": ""
+    },
+    {
+      "id": "prod-13",
+      "name": "Floral Charm Pendant",
+      "slug": "floral-charm-pendant",
+      "price": 249,
+      "image": "/uploads/products/gemini-generated-image-yza2dbyza2dbyza2-1790319955808.jpg",
+      "categoryId": "cat-01",
+      "description": ""
+    },
+    {
+      "id": "prod-14",
+      "name": "Graceful Bloom Pendant",
+      "slug": "graceful-bloom-pendant",
+      "price": 249,
+      "image": "/uploads/products/gemini-generated-image-u4yz1pu4yz1pu4yz-1790319502149.jpg",
+      "categoryId": "cat-01",
+      "description": ""
+    },
+    {
+      "id": "prod-15",
+      "name": "Diamond Frame Pendant",
+      "slug": "diamond-frame-pendant",
+      "price": 249,
+      "image": "/uploads/products/gemini-generated-image-suuyh4suuyh4suuy-1790319399911.jpg",
+      "categoryId": "cat-01",
+      "description": ""
+    },
+    {
+      "id": "prod-16",
+      "name": "Royal Heart Pendant",
+      "slug": "royal-heart-pendant",
+      "price": 249,
+      "image": "/uploads/products/gemini-generated-image-q0iagkq0iagkq0ia-1790318987584.jpg",
+      "categoryId": "cat-01",
+      "description": ""
+    },
+    {
+      "id": "prod-17",
+      "name": "Elegant Bloom Pendant",
+      "slug": "elegant-bloom-pendant",
+      "price": 249,
+      "image": "/uploads/products/gemini-generated-image-m67jlkm67jlkm67j-1790318888222.jpg",
+      "categoryId": "cat-01",
+      "description": ""
+    },
+    {
+      "id": "prod-18",
+      "name": "Perla Grace Pendant",
+      "slug": "perla-grace-pendant",
+      "price": 249,
+      "image": "/uploads/products/gemini-generated-image-l4r364l4r364l4r3-1790318650631.jpg",
+      "categoryId": "cat-01",
+      "description": ""
+    },
+    {
+      "id": "prod-19",
+      "name": "Roselle Bow Pendan",
+      "slug": "roselle-bow-pendan",
+      "price": 249,
+      "image": "/uploads/products/gemini-generated-image-jkbt9ejkbt9ejkbt-1790318559778.jpg",
+      "categoryId": "cat-01",
+      "description": ""
+    },
+    {
+      "id": "prod-20",
+      "name": "Amoura Heart Pendant",
+      "slug": "amoura-heart-pendant",
+      "price": 249,
+      "image": "/uploads/products/gemini-generated-image-gkuq7ogkuq7ogkuq-1790318297246.jpg",
+      "categoryId": "cat-01",
+      "description": ""
+    },
+    {
+      "id": "prod-21",
+      "name": "Solara Bloom Pendant",
+      "slug": "solara-bloom-pendant",
+      "price": 249,
+      "image": "/uploads/products/gemini-generated-image-dx8yvddx8yvddx8y-1790318197214.jpg",
+      "categoryId": "cat-01",
+      "description": ""
+    },
+    {
+      "id": "prod-22",
+      "name": "Eternal Heart Pendant",
+      "slug": "eternal-heart-pendant",
+      "price": 249,
+      "image": "/uploads/products/gemini-generated-image-cupljucupljucupl-1790318104529.jpg",
+      "categoryId": "cat-01",
+      "description": ""
+    },
+    {
+      "id": "prod-23",
+      "name": "Pearl Élan Pendant",
+      "slug": "pearl-lan-pendant",
+      "price": 249,
+      "image": "/uploads/products/gemini-generated-image-adt7djadt7djadt7-1790317984233.jpg",
+      "categoryId": "cat-01",
+      "description": ""
+    },
+    {
+      "id": "prod-24",
+      "name": "Emerald Reverie Pendan",
+      "slug": "emerald-reverie-pendan",
+      "price": 249,
+      "image": "/uploads/products/gemini-generated-image-26vzyc26vzyc26vz-1790317833694.jpg",
+      "categoryId": "cat-01",
+      "description": ""
+    },
+    {
+      "id": "prod-25",
+      "name": "Graceful Muse Pendant",
+      "slug": "graceful-muse-pendant",
+      "price": 249,
+      "image": "/uploads/products/gemini-generated-image-5lquae5lquae5lqu-1790317573772.jpg",
+      "categoryId": "cat-01",
+      "description": ""
+    },
+    {
+      "id": "prod-26",
+      "name": "Noir Pearl Pendant",
+      "slug": "noir-pearl-pendant",
+      "price": 299,
+      "image": "/uploads/products/gemini-generated-image-5kanuw5kanuw5kan-1790317312144.jpg",
+      "categoryId": "cat-01",
+      "description": ""
+    },
+    {
+      "id": "prod-27",
+      "name": "Bow Pendant",
+      "slug": "bow-pendant",
+      "price": 299,
+      "image": "/uploads/products/gemini-generated-image-1mpz6w1mpz6w1mpz-1790316826645.jpg",
+      "categoryId": "cat-01",
+      "description": ""
+    },
+    {
+      "id": "prod-28",
+      "name": "Timeless Hoop Earrings",
+      "slug": "timeless-hoop-earrings",
+      "price": 299,
+      "image": "/uploads/products/gemini-generated-image-ystthgystthgystt-1790321256217.jpg",
+      "categoryId": "cat-01",
+      "description": ""
+    },
+    {
+      "id": "prod-29",
+      "name": "Aqua Heart Earrings",
+      "slug": "aqua-heart-earrings",
+      "price": 299,
+      "image": "/uploads/products/gemini-generated-image-ymc10mymc10mymc1-1790321234194.jpg",
+      "categoryId": "cat-03",
+      "description": ""
+    },
+    {
+      "id": "prod-30",
+      "name": "Classic Teardrop Earrings",
+      "slug": "classic-teardrop-earrings",
+      "price": 299,
+      "image": "/uploads/products/gemini-generated-image-w18lyiw18lyiw18l-1790321195482.jpg",
+      "categoryId": "cat-03",
+      "description": ""
+    },
+    {
+      "id": "prod-31",
+      "name": "Graceful Bee Earrings",
+      "slug": "graceful-bee-earrings",
+      "price": 299,
+      "image": "/uploads/products/gemini-generated-image-w0givmw0givmw0gi-1790321159551.jpg",
+      "categoryId": "cat-03",
+      "description": ""
+    },
+    {
+      "id": "prod-32",
+      "name": "Regal Link Bracelet",
+      "slug": "regal-link-bracelet",
+      "price": 299,
+      "image": "/uploads/products/gemini-generated-image-uqfcp4uqfcp4uqfc-1790321126047.jpg",
+      "categoryId": "cat-05",
+      "description": ""
+    },
+    {
+      "id": "prod-33",
+      "name": "Elegant Cross Pendant",
+      "slug": "elegant-cross-pendant",
+      "price": 249,
+      "image": "/uploads/products/gemini-generated-image-yqkgj2yqkgj2yqkg-1790319913386.jpg",
+      "categoryId": "cat-01",
+      "description": ""
+    },
+    {
+      "id": "prod-34",
+      "name": "Teardrop Halo Pendant",
+      "slug": "teardrop-halo-pendant",
+      "price": 249,
+      "image": "/uploads/products/gemini-generated-image-ykslmgykslmgyksl-1790319871592.jpg",
+      "categoryId": "cat-01",
+      "description": ""
+    },
+    {
+      "id": "prod-35",
+      "name": "Classic Cross Pendant",
+      "slug": "classic-cross-pendant",
+      "price": 249,
+      "image": "/uploads/products/gemini-generated-image-xyqtn8xyqtn8xyqt-1790319831808.jpg",
+      "categoryId": "cat-01",
+      "description": ""
+    },
+    {
+      "id": "prod-36",
+      "name": "Classic Horseshoe Pendant",
+      "slug": "classic-horseshoe-pendant",
+      "price": 249,
+      "image": "/uploads/products/gemini-generated-image-xk1pmhxk1pmhxk1p-1790319737297.jpg",
+      "categoryId": "cat-01",
+      "description": ""
+    },
+    {
+      "id": "prod-37",
+      "name": "Emerald Halo Pendant",
+      "slug": "emerald-halo-pendant",
+      "price": 249,
+      "image": "",
+      "categoryId": "cat-01",
+      "description": ""
+    },
+    {
+      "id": "prod-38",
+      "name": "Pearl Essence Pendant",
+      "slug": "pearl-essence-pendant",
+      "price": 249,
+      "image": "/uploads/products/gemini-generated-image-wyn14cwyn14cwyn1-1790319690458.jpg",
+      "categoryId": "cat-01",
+      "description": ""
+    },
+    {
+      "id": "prod-39",
+      "name": "Emerald Grace Pendant",
+      "slug": "emerald-grace-pendant",
+      "price": 249,
+      "image": "/uploads/products/gemini-generated-image-wlec4qwlec4qwlec-1790319666164.jpg",
+      "categoryId": "cat-01",
+      "description": ""
+    },
+    {
+      "id": "prod-40",
+      "name": "Pearl Embrace Pendant",
+      "slug": "pearl-embrace-pendant",
+      "price": 249,
+      "image": "/uploads/products/gemini-generated-image-vyooq1vyooq1vyoo-1790319643766.jpg",
+      "categoryId": "cat-01",
+      "description": ""
+    },
+    {
+      "id": "prod-41",
+      "name": "Elegant Leaf Pendant",
+      "slug": "elegant-leaf-pendant",
+      "price": 249,
+      "image": "/uploads/products/gemini-generated-image-vavkmjvavkmjvavk-1790319581858.jpg",
+      "categoryId": "cat-01",
+      "description": ""
+    },
+    {
+      "id": "prod-42",
+      "name": "Celestial Heart Pendant",
+      "slug": "celestial-heart-pendant",
+      "price": 249,
+      "image": "/uploads/products/gemini-generated-image-uyc12buyc12buyc1-1790319556787.jpg",
+      "categoryId": "cat-01",
+      "description": ""
+    },
+    {
+      "id": "prod-43",
+      "name": "Pearl Blossom Pendant",
+      "slug": "pearl-blossom-pendant",
+      "price": 249,
+      "image": "/uploads/products/gemini-generated-image-usnbjgusnbjgusnb-1790319529639.jpg",
+      "categoryId": "cat-01",
+      "description": ""
+    },
+    {
+      "id": "prod-44",
+      "name": "Radiant Cross Pendant",
+      "slug": "radiant-cross-pendant",
+      "price": 249,
+      "image": "/uploads/products/gemini-generated-image-t6vrort6vrort6vr-1790319475000.jpg",
+      "categoryId": "cat-01",
+      "description": ""
+    },
+    {
+      "id": "prod-45",
+      "name": "Golden Charm Pendant",
+      "slug": "golden-charm-pendant",
+      "price": 249,
+      "image": "/uploads/products/gemini-generated-image-s4k3pgs4k3pgs4k3-1790319340068.jpg",
+      "categoryId": "cat-01",
+      "description": ""
+    },
+    {
+      "id": "prod-46",
+      "name": "Graceful Heart Pendant",
+      "slug": "graceful-heart-pendant",
+      "price": 249,
+      "image": "/uploads/products/gemini-generated-image-stexnestexnestex-1790319368847.jpg",
+      "categoryId": "cat-01",
+      "description": ""
+    },
+    {
+      "id": "prod-47",
+      "name": "Crystal Teardrop Pendant",
+      "slug": "crystal-teardrop-pendant",
+      "price": 249,
+      "image": "/uploads/products/gemini-generated-image-rjx9w7rjx9w7rjx9-1790319110509.jpg",
+      "categoryId": "cat-01",
+      "description": ""
+    },
+    {
+      "id": "prod-48",
+      "name": "Pearl Fan Pendant",
+      "slug": "pearl-fan-pendant",
+      "price": 249,
+      "image": "/uploads/products/gemini-generated-image-p4ibsmp4ibsmp4ib-1790318956412.jpg",
+      "categoryId": "cat-01",
+      "description": ""
+    },
+    {
+      "id": "prod-49",
+      "name": "Rosé Charm Pendant",
+      "slug": "ros-charm-pendant",
+      "price": 249,
+      "image": "/uploads/products/gemini-generated-image-ole0niole0niole0-1790318926236.jpg",
+      "categoryId": "cat-01",
+      "description": ""
+    },
+    {
+      "id": "prod-50",
+      "name": "Golden Drop Pendant",
+      "slug": "golden-drop-pendant",
+      "price": 249,
+      "image": "/uploads/products/gemini-generated-image-lgqyralgqyralgqy-1790318858142.jpg",
+      "categoryId": "cat-01",
+      "description": ""
+    },
+    {
+      "id": "prod-51",
+      "name": "Luméa Heart Pendant",
+      "slug": "lum-a-heart-pendant",
+      "price": 249,
+      "image": "/uploads/products/gemini-generated-image-kossy4kossy4koss-1790318609193.jpg",
+      "categoryId": "cat-01",
+      "description": ""
+    },
+    {
+      "id": "prod-52",
+      "name": "Celestia Link Pendant",
+      "slug": "celestia-link-pendant",
+      "price": 249,
+      "image": "/uploads/products/gemini-generated-image-i7qvdii7qvdii7qv-1790318484860.jpg",
+      "categoryId": "cat-01",
+      "description": ""
+    },
+    {
+      "id": "prod-53",
+      "name": "Aurelia Teardrop Pendant",
+      "slug": "aurelia-teardrop-pendant",
+      "price": 249,
+      "image": "/uploads/products/gemini-generated-image-g33pv7g33pv7g33p-1790318265342.jpg",
+      "categoryId": "cat-01",
+      "description": ""
+    },
+    {
+      "id": "prod-54",
+      "name": "Celestia Cross Pendant",
+      "slug": "celestia-cross-pendant",
+      "price": 249,
+      "image": "/uploads/products/gemini-generated-image-d2d4nkd2d4nkd2d4-1790318167074.jpg",
+      "categoryId": "cat-01",
+      "description": ""
+    },
+    {
+      "id": "prod-55",
+      "name": "Celestial Bloom Pendant",
+      "slug": "celestial-bloom-pendant",
+      "price": 249,
+      "image": "/uploads/products/gemini-generated-image-cbgmyjcbgmyjcbgm-1790318041540.jpg",
+      "categoryId": "cat-01",
+      "description": ""
+    },
+    {
+      "id": "prod-56",
+      "name": "Eternal Embrace Pendant",
+      "slug": "eternal-embrace-pendant",
+      "price": 249,
+      "image": "/uploads/products/gemini-generated-image-a4zd55a4zd55a4zd-1790317896047.jpg",
+      "categoryId": "cat-01",
+      "description": ""
+    },
+    {
+      "id": "prod-57",
+      "name": "Divine Radiance Pendant",
+      "slug": "divine-radiance-pendant",
+      "price": 249,
+      "image": "/uploads/products/gemini-generated-image-7mu6np7mu6np7mu6-1790317671568.jpg",
+      "categoryId": "cat-01",
+      "description": ""
+    },
+    {
+      "id": "prod-58",
+      "name": "Élan Bloom Pendan",
+      "slug": "lan-bloom-pendan",
+      "price": 249,
+      "image": "/uploads/products/gemini-generated-image-ibk00jibk00jibk0-1790318519670.jpg",
+      "categoryId": "cat-01",
+      "description": ""
+    },
+    {
+      "id": "prod-59",
+      "name": "Enchanted Fleur Pendant",
+      "slug": "enchanted-fleur-pendant",
+      "price": 249,
+      "image": "/uploads/products/gemini-generated-image-g0lrl3g0lrl3g0lr-1790318235634.jpg",
+      "categoryId": "cat-01",
+      "description": ""
+    },
+    {
+      "id": "prod-60",
+      "name": "Petite Fleur Pendant",
+      "slug": "petite-fleur-pendant",
+      "price": 249,
+      "image": "/uploads/products/gemini-generated-image-ckpw85ckpw85ckpw-1790318078501.jpg",
+      "categoryId": "cat-01",
+      "description": ""
+    },
+    {
+      "id": "prod-61",
+      "name": "Blush Élan Pendant",
+      "slug": "blush-lan-pendant",
+      "price": 249,
+      "image": "/uploads/products/gemini-generated-image-215c5i215c5i215c-1790317865449.jpg",
+      "categoryId": "cat-01",
+      "description": ""
+    },
+    {
+      "id": "prod-62",
+      "name": "Celestial Eclipse Pendant",
+      "slug": "celestial-eclipse-pendant",
+      "price": 249,
+      "image": "/uploads/products/gemini-generated-image-9okewu9okewu9oke-1790317724677.jpg",
+      "categoryId": "cat-01",
+      "description": ""
+    },
+    {
+      "id": "prod-63",
+      "name": "Bloom Royale Pendant",
+      "slug": "bloom-royale-pendant",
+      "price": 299,
+      "image": "/uploads/products/gemini-generated-image-4obs24obs24obs24-1790317272891.jpg",
+      "categoryId": "cat-01",
+      "description": ""
+    },
+    {
+      "id": "prod-64",
+      "name": "Divine Cross Pendant",
+      "slug": "divine-cross-pendant",
+      "price": 299,
+      "image": "/uploads/products/gemini-generated-image-2xef232xef232xef-1790317210537.jpg",
+      "categoryId": "cat-01",
       "description": ""
     }
   ]
